@@ -1,0 +1,48 @@
+#main { margin:0 auto 20px; width:984px;}
+#countrycontent { padding:43px 50px 26px; position:relative; }
+
+/* sections */
+.section { clear:left; float:left; padding-bottom:18px; width:100%; }
+.section h2 { border-bottom:1px solid #e4e4e4; font-weight:normal; margin-bottom:3px; padding-bottom:15px; }
+.section ul { float:left; width:880px; margin-bottom:18px; }
+.section ul li { float:left; width:146px; margin:18px 0 0px; min-height: 36px; }
+.section ul li.clear { clear:left; }
+.section ul li img { float:left; margin:0 10px 0 0; }
+
+.section ul li a { display:table; width:126px; color:#666; *display:block; *position:relative; cursor:pointer; }
+.section ul li span { display:table-cell; width:86px; vertical-align:middle; *display:block; *position:absolute; *top:50%; }
+.section ul li span span { width:100%; *display:block; *position:relative; *top:-50%; }
+.section ul li a:hover { color:#08c; }
+
+/* specific */
+.section ul li a.la  span,
+.section ul li a.lae span { position:static; }
+#container:after, #content:after, .grid2col:after, .grid2cola:after, .grid2colb:after, .grid2colc:after, .grid2cold:after, .grid2cole:after, .grid2colf:after, .grid3col:after, .grid3cola:after, .grid4col:after, .grid5col:after, .grid6col:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.selfclear:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+#countrycontent, .grid2col, .grid2cola, .grid2colb, .grid2colc, .grid2cold, .grid2cole, .grid2colf, .grid3col, .grid3cola, .grid4col, .grid5col, .grid6col {
+}
+#countrycontent {
+    color: #333333;
+    padding: 18px 20px;
+    position: relative;
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.countrycontent:nth-child(n) {
+    border: medium none;
+}
+.countrycontent, .rounded {
+    border-radius: 4px 4px 4px 4px;
+}

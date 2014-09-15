@@ -1,0 +1,54 @@
+/* Getting Started 
+------------------------------- */
+/* Screen Unlock */
+#basics .updates #unlock { background-image:url(https://www.apple.com/ios/ios7-basics/images/updates_unlock.jpg); }
+#basics .updates .screensequence-flow #unlock.screensequence-endstate { background-image:url(https://www.apple.com/media/us/ios/2013/c9d61301_0529_4348_aaa2_0e0689ee3551/unlockspringboard/unlockspringboard_endframe.jpg); }
+#basics .updates .screensequence-video #unlock.screensequence-endstate { background-image:url(https://www.apple.com/media/us/ios/2013/c9d61301_0529_4348_aaa2_0e0689ee3551/unlockspringboard/unlockspringboard_lastframe.jpg); }
+
+/* Control Center */
+#basics .updates #control-center { background-image:url(https://www.apple.com/ios/ios7-basics/images/updates_control_center.jpg); }
+#basics .updates .screensequence-flow #control-center.screensequence-endstate { background-image:url(https://www.apple.com/media/us/ios/2013/c9d61301_0529_4348_aaa2_0e0689ee3551/controlcenter/controlcenter_endframe.jpg); }
+#basics .updates .screensequence-video #control-center.screensequence-endstate { background-image:url(https://www.apple.com/media/us/ios/2013/c9d61301_0529_4348_aaa2_0e0689ee3551/controlcenter/controlcenter_lastframe.jpg); }
+
+/* Notification Center */
+#basics .updates #notification-center { background-image:url(https://www.apple.com/ios/ios7-basics/images/updates_notification_center.jpg); }
+#basics .updates .screensequence-flow #notification-center.screensequence-endstate { background-image:url(https://www.apple.com/media/us/ios/2013/c9d61301_0529_4348_aaa2_0e0689ee3551/notificationcenter/notificationcenter_endframe.jpg); }
+#basics .updates .screensequence-video #notification-center.screensequence-endstate { background-image:url(https://www.apple.com/media/us/ios/2013/c9d61301_0529_4348_aaa2_0e0689ee3551/notificationcenter/notificationcenter_lastframe.jpg); }
+
+/* Spotlight */
+#basics .updates #spotlight { background-image:url(https://www.apple.com/ios/ios7-basics/images/updates_spotlight.jpg); }
+#basics .updates .screensequence-flow #notification-center.screensequence-endstate  { background-image:url(https://www.apple.com/media/us/ios/2013/c9d61301_0529_4348_aaa2_0e0689ee3551/spotlight/spotlight_endframe.jpg); }
+#basics .updates .screensequence-video #notification-center.screensequence-endstate { background-image:url(https://www.apple.com/media/us/ios/2013/c9d61301_0529_4348_aaa2_0e0689ee3551/spotlight/spotlight_lastframe.jpg); }
+
+
+/* iOS 7.1 Update
+------------------------------- */
+#update .carplay:before { background-image:url(https://www.apple.com/ios/ios7-update/images/carplay_hero_left.jpg); }
+#update .carplay:after { background-image:url(https://www.apple.com/ios/ios7-update/images/carplay_hero_right.jpg); }
+
+
+/* High-DPI */
+@media only screen and (-webkit-min-device-pixel-ratio:1.5) and (min-device-width:321px),
+       only screen and (min--moz-device-pixel-ratio:1.5) and (min-device-width:321px),
+       only screen and (min-device-pixel-ratio:1.5) and (min-device-width:321px) {
+
+	#basics .updates #unlock { background-image:url(https://www.apple.com/ios/ios7-basics/images/updates_unlock_2x.jpg); }
+	#basics .updates .screensequence-flow #unlock.screensequence-endstate,
+	#basics .updates .screensequence-video #unlock.screensequence-endstate { background-image:url(https://www.apple.com/media/us/ios/2013/c9d61301_0529_4348_aaa2_0e0689ee3551/unlockspringboard/unlockspringboard_lastframe_2x.jpg); }
+
+	#basics .updates #control-center { background-image:url(https://www.apple.com/ios/ios7-basics/images/updates_control_center_2x.jpg); }
+	#basics .updates .screensequence-flow #control-center.screensequence-endstate,
+	#basics .updates .screensequence-video #control-center.screensequence-endstate { background-image:url(https://www.apple.com/media/us/ios/2013/c9d61301_0529_4348_aaa2_0e0689ee3551/controlcenter/controlcenter_lastframe_2x.jpg); }
+
+	#basics .updates #notification-center { background-image:url(https://www.apple.com/ios/ios7-basics/images/updates_notification_center_2x.jpg); }
+	#basics .updates .screensequence-flow #notification-center.screensequence-endstate,
+	#basics .updates .screensequence-video #notification-center.screensequence-endstate { background-image:url(https://www.apple.com/media/us/ios/2013/c9d61301_0529_4348_aaa2_0e0689ee3551/notificationcenter/notificationcenter_lastframe_2x.jpg); }
+
+	#basics .updates #spotlight { background-image:url(https://www.apple.com/ios/ios7-basics/images/updates_spotlight_2x.jpg); }
+	#basics .updates .screensequence-flow #notification-center.screensequence-endstate,
+	#basics .updates .screensequence-video #notification-center.screensequence-endstate { background-image:url(https://www.apple.com/media/us/ios/2013/c9d61301_0529_4348_aaa2_0e0689ee3551/spotlight/spotlight_lastframe_2x.jpg); }
+
+	/* iOS 7.1 Update */
+	#update .carplay:before { background-image:url(https://www.apple.com/ios/ios7-update/images/carplay_hero_left_2x.jpg); }
+	#update .carplay:after { background-image:url(https://www.apple.com/ios/ios7-update/images/carplay_hero_right_2x.jpg); }
+}

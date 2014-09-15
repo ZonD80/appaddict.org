@@ -1,0 +1,163 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><head>
+	<meta charset="utf-8">
+	<meta name="Author" content="Apple Inc.">
+	<meta name="viewport" content="width=1024">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+	<link id="globalheader-stylesheet" rel="stylesheet" href="https://www.apple.com/global/nav/styles/navigation.css" type="text/css">
+	
+
+	<title>AppAddict 4</title>
+	<link rel="stylesheet" href="https://www.appaddict.org/ios-app/stylesheets/base.css" type="text/css">
+	<link rel="stylesheet" href="https://www.appaddict.org/ios-app/stylesheets/ios.css" type="text/css">
+	<link rel="stylesheet" href="https://www.appaddict.org/ios-app/stylesheets/ios1.css" type="text/css">
+	<link rel="stylesheet" href="https://www.appaddict.org/ios-app/stylesheets/overview.css" type="text/css">
+	<link rel="stylesheet" href="https://www.appaddict.org/ios-app/stylesheets/overview1.css" type="text/css">
+	<script src="https://www.apple.com/global/scripts/lib/prototype.js" type="text/javascript" charset="utf-8"></script><style type="text/css"></style>
+	<script src="https://www.apple.com/global/scripts/lib/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://www.apple.com/global/scripts/lib/sizzle.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://www.apple.com/global/scripts/browserdetect.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://www.apple.com/global/scripts/apple_core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://www.apple.com/global/scripts/search_decorator.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://www.apple.com/global/scripts/feedstatistics.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://www.apple.com/global/ac_base/ac_base.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://www.apple.com/global/ac_retina/ac_retina.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="https://www.apple.com/global/scripts/lib/event_mixins.js" charset="utf-8"></script>
+	<script src="https://www.apple.com/global/scripts/swap_view.js" charset="utf-8"></script>
+	<script src="https://www.apple.com/global/scripts/view_master_tracker.js" charset="utf-8"></script>
+	<script src="https://www.apple.com/v/ios/f/scripts/ac_autogallery/ac_autogallery.js" charset="utf-8"></script>
+
+<script src="https://www.apple.com/global/ac_media_player/scripts/ac_media.js" charset="utf-8"></script>
+<script>
+
+ACUtils.platterFixes = {
+	isIE8: function () {
+		var match = navigator.userAgent.toLowerCase().match(/msie\D*([\.\d]*)/i);
+		return (match && match[1] && (parseInt(match[1]) <= 8));
+	}
+}
+
+Media.ControlsWidget.prototype._positionSettingsMenuForControl = Media.ControlsWidget.prototype.positionSettingsMenuForControl;
+Media.ControlsWidget.prototype.positionSettingsMenuForControl = function(control) {
+	var correction = ((document.viewport.getDimensions().width - document.body.offsetWidth));
+	this._positionSettingsMenuForControl(control);
+	this.settingsMenu.style.left = (parseInt(this.settingsMenu.style.left) - correction / 2) + 'px';
+}
+
+if (!ACUtils.platterFixes.isIE8()) {
+	ACUtils._cumulativeOffset = ACUtils.cumulativeOffset;
+	ACUtils.cumulativeOffset = function(element) {
+		var offset = ACUtils._cumulativeOffset(element);
+
+		// if we're in a platter, compensate for the width set on the body
+		offset[0] += ((document.viewport.getDimensions().width - document.body.offsetWidth) / 2);
+		offset.left = offset[0];
+		return offset;
+	}
+}
+
+</script>
+
+	
+<script src="https://www.apple.com/global/ac_showonscroll/ac_showonscroll.js" charset="utf-8"></script>
+
+
+
+	
+	<script src="https://www.apple.com/v/ios/f/scripts/ac_ambient/ac_ambient.js" charset="utf-8"></script>
+
+
+
+	<script src="https://www.apple.com/v/ios/f/scripts/ios.js" type="text/javascript" charset="utf-8"></script>
+
+
+	<script src="https://www.apple.com/v/ios/f/scripts/overview.js" type="text/javascript" charset="utf-8"></script>
+<link id="globalheader-enhanced-stylesheet" rel="stylesheet" href="https://www.apple.com/global/nav/styles/enhanced.css" type="text/css"></head>
+<body class="overview" id="overview">
+	
+	<script type="text/javascript">
+		var searchSection = 'global';
+		var searchCountry = 'us';
+		var aiRequestsEnabled = true;
+		var aiDisplaySuggestions = true;
+	</script>
+
+<script src="https://www.apple.com/global/nav/scripts/globalnav.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	AC.GlobalNav.Instance = new AC.GlobalNav();
+</script><div id="globalheader-loaded-test"></div>
+
+	<div id="top">
+<!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+
+<script type="text/javascript">
+/* RSID: */
+
+var s_account="appleglobal,appleusios"
+
+</script>
+
+<script type="text/javascript" src="https://www.apple.com/metrics/scripts/s_code_h.js"></script>
+
+<script type="text/javascript" src="https://www.apple.com/metrics/scripts/touch_forcedlink.js"></script>
+
+<script type="text/javascript">
+
+s.pageName=AC.Tracking.pageName()+" (us)";
+
+s.channel="www.us.ios"
+
+Event.onDOMReady(function() {
+	function trackNav(link,loc) {
+		link.observe('mousedown',function(){
+			if(AC&&AC.Storage){
+				AC.Storage.setItem('s_nav',loc,'0');
+			}
+		});
+	}
+	$$('.content a').each(function(link){
+		var spanCheck='';
+		if(spanCheck=link.up('p')){
+			if(spanCheck.hasClassName('intro')){
+				trackNav(link,'hero promo');
+			}
+		} else if(link.hasClassName('more')){
+			trackNav(link,'learn more');
+		}
+	});
+	$$('#promofooter a').each(function(link){
+		trackNav(link,'promo footer');
+	});
+	$$('.buckets a').each(function(link){
+		trackNav(link,'promos');
+	});
+	$$('.icloud-callout a').each(function(link){
+		trackNav(link,'call out');
+	});
+});
+
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)</script>
+<!-- End SiteCatalyst code version: H.8. -->
+</div>
+<br>
+	<nav id="productheader" class="ios7-header" data-hires="true">
+	<h2><a href="https://www.appaddict.org"><img src="https://www.appaddict.org/images/aa-uberheader.png"  alt=""></a></h2>
+    <ul>
+	    <li id="pn-overview"><a href="/ios-app/" onclick="s_objectID=&quot;https://www.appaddict.org/ios-app/_2&quot;;return this.s_oc?this.s_oc(e):true">Overview</a></li>
+		<li id="pn-isigncloud"><a href="http://www.isigncloud.com">iSignCloud</a></li>
+	</ul>
+</nav>
+
+	<div id="flushpage">
+		<div id="main" data-hires="true">
+
+			<header id="hero" class="selfclear hero">
+				<h1 class="title"><img src="https://www.appaddict.org/ios-app/images/hero-title.png" width="425" height="66" alt="AppAddict 4"></h1>
+				<h2 class="intro"><img src="https://www.appaddict.org/ios-app/images/overview-subtitle.png" height="56" alt="The Best of Its Kind."></h2>
+	
+						<br><figure id="hero-ambient" class="hero-ambient step-one relative screensequence-flow screensequence-enhanced screensequence-ended" data-screensequence="overview_hero_avail#format:flow" data-analytics="play,didPlay,stop" data-analytics-name="hero-ambient"><div class="screen screensequence-screen ac-ambient-canplay"><img src="https://www.appaddict.org/ios-app/images/overview_hero_main_41.jpg" height="600" width="918"></div>
+												</figure>
+
+			</header>

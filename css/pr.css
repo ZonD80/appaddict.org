@@ -1,0 +1,95 @@
+/* -- Shared styles -- */
+p.intro {
+    color: #888888;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+    text-align: center;
+}
+#crackerscontent h1 { text-align: center; margin-bottom: 5px;}
+#main {margin-bottom: 20px;}
+#productheader .replaced {behavior: url( /global/scripts/lib/iepngfix.htc); }
+#main #crackerscontent { border-radius: 4px; overflow: hidden; padding:60px 120px; width:742px; position:relative; }
+#main #crackerscontent dl { position:relative; float:left; width:100%; line-height:1.8em; }
+#main #crackerscontent dt { position:relative; float:left; margin-bottom:12px; color:#888; display:block; width:85px; }
+#main #crackerscontent dd { position:relative; float:left; margin-bottom:12px; width:640px; display:block; }
+#main #crackerscontent dd a { line-height:1.3em; display:block; float:left; position:relative; padding:3px 0; clear:both; }
+#main #crackerscontent dd a em { font-style:normal; font-weight:bold; }
+
+#profiles img {border-radius: 6px;}
+#crackerscontent {
+    background: none repeat scroll 0 0 #FFFFFF;
+    /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);*/
+    min-height: 400px;
+}
+
+#agreement { display:none; }
+
+/* leadership */
+#main.leadership-profile { margin-bottom:36px; }
+#main.leadership-profile #crackerscontent { background: #fff; padding:42px 47px 38px 47px; min-height:578px; width:886px; }
+#main.leadership-profile #crackerscontent .profile-wrapper { background: url('/itunes_files/profile_wrapper_bg20110204.png') top center; padding:32px 40px 21px 40px; width:352px; min-height:544px; *height:544px; _height:544px; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; -khtml-border-radius: 4px; position:relative; z-index:5; }
+#main.leadership-profile #crackerscontent .profile-wrapper .profile { opacity:1 !important; position:relative; z-index:100; font-size:14px; line-height:18px; }
+#main.leadership-profile #crackerscontent .profile-wrapper .profile div#bottom-fade { width:333px; height:100px; position:absolute; bottom:0; z-index:100; *display:none !important; _display:none; }
+#main.leadership-profile #crackerscontent .profile-wrapper .profile div#top-fade { width:333px; height:100px; position:absolute; top:100px; z-index:100; *display:none !important; _display:none; }
+#main.leadership-profile #crackerscontent .profile-wrapper .profile div.profile-titles { height:100px; position:relative; width:100%; margin-bottom:0.6em; }
+#main.leadership-profile #crackerscontent .profile-wrapper .profile h2 { padding:0; line-height:1; margin-bottom:0; }
+#main.leadership-profile #crackerscontent .profile-wrapper .profile h3 { margin:9px 0 17px 0; }
+#main.leadership-profile #crackerscontent .profile-wrapper .profile p.last { margin-bottom:0; }
+#main.leadership-profile #crackerscontent .profile-wrapper .profile div.profile-copy-wrapper { position:relative; width:23em; height:31em; -webkit-transition:top 2.5s; -moz-transition:top 2.5s; }
+#main.leadership-profile #crackerscontent .profile-wrapper .profile div#profile-copy { position:relative; -webkit-transition:top 2.5s; -moz-transition:top 2.5s; }
+#main.leadership-profile #crackerscontent .profile-wrapper .profile a.truncate { position:absolute; padding-right:13px; bottom:-26px; _bottom:47px; background:url('/itunes_files/more-arrow.png') no-repeat right 60.5%; -webkit-transition:opacity 1.5s; -moz-transition:opacity 1.5s; }
+#main.leadership-profile #crackerscontent .portrait { position:absolute; right:0; bottom:0; z-index:1; }
+#main.leadership-profile #crackerscontent .portrait-fade { content: " "; display: block; width: 575px; height: 657px; position:absolute; right:0; bottom:0; z-index:2; background: url('/itunes_files/fade-trns.png'); }
+.leadership .download { font-size:11px; width:960px; text-align:right; padding:0 10px; margin:-29px auto -7px auto; color:#999; }
+
+#main #crackerscontent #sidebar h2.subtitle { font-weight:normal; margin-left:18px; margin-bottom:0; }
+#main #crackerscontent .section ul { float:left; position:relative; width:740px; }
+#main #crackerscontent .section ul li { display:block; float:left; position:relative; width:185px; min-height:265px; _height:100px; }
+#main #crackerscontent .section ul li h4 { color:#333; font-size:11px; font-weight:normal; margin-top:2px; }
+#main #crackerscontent .section ul li a h3 { font-size:12px; color:#08c; font-weight:bold; text-decoration:none; margin-top:4px; margin-bottom:0px; }
+#main #crackerscontent .section ul li a:hover h3 { text-decoration:underline; }
+#main #crackerscontent .section ul li p { font-size:11px; }
+
+#main #crackerscontent .section.directors { border-top:1px solid #e1e1e1; padding-top:12px;    margin-top: 20px; }
+#main #crackerscontent .section.directors ul { margin:5px 0 0; }
+#main #crackerscontent .section.directors li { min-height:80px; _height:80px; margin-bottom:2px; width:185px; }
+#main #crackerscontent .section.directors li a { font-weight:bold; }
+
+#main .section { float:left; position:relative; width:100%; }
+#main .section h2 { font-size:28px; color:#000; font-weight:normal; line-height:1.5em; }
+
+#crackerscontent .contact {
+    background-color: #FCFCFC;
+    border: 1px solid #E8E8E8;
+
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 42px;
+    padding: 15px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+#main #crackerscontent span.title {
+    color: #999999;
+}
+#main #crackerscontent span.phone {
+    margin-left: 30px;
+}
+#main #crackerscontent span.email {
+    color: #0088CC;
+    margin-left: 30px;
+}
+
+
+#crackerscontent .view_boxes_container .view_boxes {background: url(/itunes_files/view_bg.png); float: left; height: 248px; position: relative; width: 316px;}
+#crackerscontent .view_boxes_container .right {float:right;}
+#crackerscontent .view_boxes_container .view_boxes:hover {background: url(/itunes_files/view_bg_180.png);}
+
+#crackerscontent .view_boxes_container .view_boxes h2 {position: absolute; font-size: 30px; font-weight: normal; width: 315px; text-align: center; top: 40px;}
+
+#crackerscontent .view_boxes_container .view_boxes h2 span {font-weight: bold;}
+
+#crackerscontent .view_boxes_container .o_r {float: left; font-size: 38px; text-align: center; padding: 0 6px; margin-top: 115px; font-weight: bold; width:95px;}
+.clear {clear: both;}

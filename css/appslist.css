@@ -1,0 +1,19 @@
+#content .aplication-container .application-box {float: left; margin: 0 20px 20px 0; width: 280px; position: relative;}
+#content .aplication-container .application-box img {height: 100px; width: 100px; border-radius: 18px; border: 1px solid black; box-shadow: 0px 1px 2px 0px black;}
+#content .aplication-container .application-box > a {
+    position: absolute;
+}
+#content .aplication-container .application-box div.appdesc {
+    width: 168px;
+    height: 100px;
+    margin: 0 0 0 110px;
+    overflow: hidden;
+}
+#content .aplication-container .application-box div.appdesc > div {
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+}
+#content .aplication-container .application-box .apptitle { font-weight: bold }
+#content .aplication-container .application-box span {color: black; font-size:11px;}

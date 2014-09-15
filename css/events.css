@@ -1,0 +1,99 @@
+
+p.intro {
+    color: #888888;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+}
+/* -- general -- */
+html, body { background: #f2f2f2; }
+#main { width: 980px; }
+
+.shadow { box-shadow: rgba(0,0,0,0.3) 0 1px 3px; -webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 3px; -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px; -o-box-shadow: rgba(0,0,0,0.3) 0 1px 3px; }
+
+#content { width:880px; padding:49px 50px 27px; overflow:hidden; }
+#content:after { content:'.'; display:block; clear:both; height:0; visibility:hidden; }
+
+.content:nth-child(n) {
+    border: medium none;
+}
+.content, .rounded {
+    border-radius: 4px 4px 4px 4px;
+}
+.content {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #E5E5E5 #DBDBDB #D2D2D2;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+span.more {
+    background: url("/images/apple/morearrow_08c.gif") no-repeat scroll 100% 50% transparent;
+    cursor: pointer;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+#overview #content {
+    padding: 43px 50px 70px;
+    width: 880px;
+}
+#overview #main h1 { text-align: center; margin-bottom: 5px; line-height: 10px; }
+#overview #main p.intro { text-align: center; font-size: 18px; line-height: 24px; margin-bottom: 18px; }
+#overview #main ul { position:relative; z-index:1; width:930px; margin-right:-50px; }
+#overview #main ul li { float:left; position:relative; width:413px; margin-bottom:22px; margin-right:50px; border: 1px solid #d6d6d6; background: url(/itunes_files/overview_bucket_bg_20100525.gif) repeat-x bottom left; }
+#overview #main ul li div { width: 397px; height: 389px; padding: 9px 8px 0; display: block; }
+#overview #main ul li a:hover { text-decoration: underline; }
+#overview #main ul li a:hover span.more { text-decoration: underline; }
+#overview #main ul li h3 { padding-left: 3px; margin-top: 10px; margin-bottom: 4px; line-height: 16px; font-weight: normal; }
+#overview #main ul li h3.sub { color: #666; margin-top: 0; margin-bottom: 11px; }
+#overview #main ul li p { padding-left:3px; color:#333; }
+
+
+/*-------------- details ------------------*/
+#details #content { padding: 30px 62px; width: 856px; }
+#details .ipad { padding-top: 32px; }
+#details .content img.right { padding: 5px; }
+#details .content h1 { margin-bottom: 9px; margin-top: 23px; }
+#details .content p.intro { width: 285px; margin-bottom: 24px; color: #444; font-size: 14px; line-height: 20px; }
+#details .content p.links { float: left; clear: left; }
+#details .content a.getqt img { margin-bottom: 10px; float: left; clear: left; }
+
+#details .content ul { float: left; margin-bottom: 8px; width: 202px; }
+#details .content ul li { _height: 25px; }
+#details .content ul li a { margin-bottom: 4px; height: 25px; width: 202px; background-repeat: no-repeat; display: block; text-indent: -9999px; outline: none; }
+#details .content ul li a:hover { background-position-y: -25px; }
+#details .content ul li a:active { background-position-y: -50px; }
+#details .content ul li.triggerSL { *display: none; }
+#details a.quicktime-download { margin: 0 0 20px; *margin-bottom: 0; padding: 0; font-size: 14px; line-height: 20px; color: #08c; text-align: left; }
+#details a.quicktime-download:hover { text-decoration: underline; }
+
+/* Footer Promos */
+#promoblock {text-align: center; padding-top: 13px;}
+
+.contact {
+    background-color: #FCFCFC;
+    border: 1px solid #E8E8E8;
+
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 42px;
+    padding: 15px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.contact span.title {
+    color: #999999;
+}
+.contact span.phone {
+    margin-left: 30px;
+}
+.contact span.email {
+    color: #0088CC;
+    margin-left: 30px;
+}

@@ -1,0 +1,8 @@
+{
+    "websiteName": "AppAddict",
+    "websitePushID": "web.appaddict.org",
+    "allowedDomains": ["https://www.appaddict.org"],
+    "urlFormatString": "https://%@",
+    "authenticationToken": "{TOKEN}",
+    "webServiceURL": "https://www.appaddict.org/push-safari/?"
+}

@@ -1,0 +1,687 @@
+/* Platter-less
+------------------------*/
+html { width:100%; height:100%; background:#fff; }
+body { min-height:100%; width:100%; min-width:1024px; background:#fff; }
+#flushpage { overflow-x:hidden; overflow-y:auto; }
+#main { width:980px; margin:0 auto; padding:25px 0 0; position:static; zoom:1; }
+body .row { width:980px; margin:0 auto; z-index:1; position:relative; }
+
+body:before { content:'.'; display:block; height:0; clear:both; visibility:hidden; }
+
+#main,
+#main #content { position:static; background:transparent; }
+#main .content,
+#main #content { border:none;
+	-webkit-box-shadow:none;
+	   -moz-box-shadow:none;
+	        box-shadow:none;
+	-webkit-border-radius:0;
+	 -khtml-border-radius:0;
+	   -moz-border-radius:0;
+	        border-radius:0;
+}
+
+#globalfooter { clear:both; }
+
+
+/* Site-wide Styles
+------------------------*/
+#main,
+#main a p,
+#main p.intro { color:#404040; }
+.main:after { content:'.'; display:block; height:0; clear:both; visibility:hidden; }
+
+/* fonts */
+.main { font-size:1.33em; line-height:1.44em; word-spacing:-1px; } /* 14px/20px */
+.main h1 { font-size:1.7142em; line-height:1.1666em; margin-bottom:10px; font-weight:normal; } /* 24px/28px */
+.main h2 { font-size:1.2857em; line-height:1.3888em; margin-bottom:7px; } /* 18px/25px */
+.main h3 { font-size:1.1428em; line-height:1.25em; margin-bottom:7px; }/* 16px/20px */
+.main h4 { font-size:1em; margin-bottom:7px; } /* 14px/20px */
+
+.main h1 img,
+.main h2 img { display:block; margin:0; }
+
+.main .title,
+.main .title h1,
+.main .title h2 { line-height:1.2142em; font-weight:normal; }
+
+.main .title { font-size:2em; margin-bottom:10px; }
+.main .title h1,
+.main .title h2 { font-size:1em; margin-bottom:0; }
+.main .title h2 { color:#898989; }
+
+.main .small { font-size:.8571em; line-height:1.5em; } /* 12px/18px */
+.main .intro { font-size:1.2857em; line-height:1.3888em; font-weight:normal; } /* 18px/25px */
+.main .caption { color:#666; }
+
+.main .hero h1 { margin-bottom:2px; }
+
+.main .hero-link { font-size:14.4px; padding-left:32px; line-height:32px; background:no-repeat 0 50%; background-size:27px 27px; }
+.main .hero-link.play { background-image:url(https://www.apple.com/v/ios/f/images/icon_play.png); }
+.main .hero-link.more { background-image:url(https://www.apple.com/v/ios/f/images/icon_more.png); }
+.main .hero-link.more-arrow { background-image:url(https://www.apple.com/v/ios/f/images/icon_more_arrow.png); background-size:28px 28px; }
+
+@media only screen {
+	.main .hero-link.play { background-image:url(https://www.apple.com//v/ios/f/images/icon_play.svg); }
+	.main .hero-link.more { background-image:url(https://www.apple.com//v/ios/f/images/icon_more.svg); }
+	.main .hero-link.more-arrow { background-image:url(https://www.apple.com//v/ios/f/images/icon_more_arrow.svg); }
+}
+
+/* layout */
+.main .row { padding-top:50px; padding-bottom:32px; }
+
+.main .column { *display:inline; }
+
+.main .block { display:block; }
+.main .inline { display:inline; }
+.main .left { float:left; }
+.main .right { float:right; }
+.main .center { display:block; margin-right:auto; margin-left:auto; text-align:center; }
+
+.main .flushpad,
+.main .padright { padding-right:85px; }
+
+.main .flushpad,
+.main .padleft { padding-left:85px; }
+
+.main .flushpad,
+.main .flushright { margin-right:-85px; }
+
+.main .flushpad,
+.main .flushleft { margin-left:-85px; }
+
+.main .flushtop,
+.main .flushbottom,
+.main .flushright,
+.main .flushleft,
+.main .relative { *position:relative; *z-index:1; *zoom:1; }
+
+/* vertically aligned middle */
+.main .middle { behavior:url(/v/ios/f/scripts/middle.htc);
+	display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
+	-webkit-box-align:center; -moz-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center;
+}
+.main .middle:after { content:'.'; display:block; height:0; clear:both; visibility:hidden; }
+
+.main .middle > * { position:relative; z-index:1; -webkit-box-flex:0; -moz-box-flex:0; -webkit-flex:0 1 auto; -ms-flex:0 1 auto; flex:0 1 auto; }
+.main .middle > .middled { -webkit-box-flex:1; -moz-box-flex:1; -webkit-flex:1 1 auto; -ms-flex:1 1 auto; flex:1 1 auto; }
+.main .middle > .middled.nudge { min-width:350px; } /* some calcuation errors on flushright, make the left col a bit bigger in this case */
+
+@-moz-document url-prefix() {
+	.main .middle { width:100%; -moz-box-sizing:border-box; }
+}
+
+/* links */
+.main a { cursor:pointer; }
+.main a.wrap { text-decoration:none; }
+.main a.wrap:hover span { text-decoration:underline; cursor:pointer; }
+a.more,
+em.more,
+span.more { padding-right:12px; background-image:url(https://www.apple.com/v/ios/f/images/more.png); background-position:100% 60%; background-size:6px 11px; }
+a.more.light,
+em.more.light,
+span.more.light { color:#5cc3f6; background-image:url(https://www.apple.com/v/ios/f/images/more_light.png); }
+
+@media only screen {
+	a.more,
+	em.more,
+	span.more { background-image:url(https://www.apple.com//v/ios/f/images/more.svg); }
+	a.more.light,
+	em.more.light,
+	span.more.light { background-image:url(https://www.apple.com//v/ios/f/images/more_light.svg); }
+}
+
+/* aesthetic */
+.main .shadow { border:1px solid #ccc; -webkit-box-shadow:0 1px 4px rgba(0,0,0,0.4); -moz-box-shadow:0 1px 4px rgba(0,0,0,0.4); box-shadow:0 1px 4px rgba(0,0,0,0.4); }
+.main .inset { border:1px solid #ccc; -webkit-box-shadow:inset 0 1px 4px rgba(0,0,0,0.4); -moz-box-shadow:inset 0 1px 4px rgba(0,0,0,0.4); box-shadow:inset 0 1px 4px rgba(0,0,0,0.4); }
+
+.main .shadow:nth-child(1n),
+.main .inset:nth-child(1n) { border:none; }
+
+.main .gradient {
+	background:#f2f2f2;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(242,242,242,1)));
+	background:-webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+	background:-moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+	background:-o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+	background:linear-gradient(top, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+}
+
+.main .divider-down { margin-left:-85px; margin-right:-85px; padding-left:85px; padding-right:85px; padding-top:90px; background:url(https://www.apple.com/v/ios/f/images/divider_down.png) no-repeat 50% 0; }
+.main .divider-up { margin-left:-85px; margin-right:-85px; padding-left:85px; padding-right:85px; padding-bottom:80px; background:url(https://www.apple.com/v/ios/f/images/divider_up.png) no-repeat 50% 100%; }
+.main .divider-flat { padding-left:85px; padding-right:85px; padding-top:40px; padding-bottom:40px; background:url(https://www.apple.com/v/ios/f/images/divider_flat.png) no-repeat center; }
+
+/* scroll-tiles */
+.main .scroll-tiles { text-align:center; }
+.main .scroll-tiles li,
+.main .scroll-tiles li a { display:-moz-table-cell; display:inline-block; *display:inline; *zoom:1; }
+.main .scroll-tiles li { margin:5px; }
+.main .scroll-tiles li a { width:100px; min-height:100px; font-size:0.69em; line-height:1.36; color:#666; text-decoration:none; vertical-align:top; }
+.main .scroll-tiles li a:hover { color:#08c; }
+.main .scroll-tiles li a:nth-child(1n) { border:none; }
+.main .scroll-tiles li a img { margin:0 auto; }
+.main .scroll-tiles li a span { display:block; min-height:3.82em; }
+
+/* hardware */
+.main .hardware,
+.main .hardware .screen { display:block; }
+.main .hardware[data-screensequence],
+.main .hardware[data-screensequence] .screen { position:relative; z-index:1000; } /* For managing compositing layers, cropping canvases */
+.main .hardware { background:no-repeat 0 0; text-align:center; }
+.main .hardware .screen { overflow:hidden; }
+
+.main .hardware.iphone { width:254px; height:575px; padding:95px 43px 0; background:url(https://www.apple.com/v/ios/f/images/hardware_iphone.png) 50% 0 no-repeat; background-size:340px 665px; }
+.main .hardware.iphone .screen { width:254px; height:451px; margin-bottom:98px; overflow:hidden; background-size:254px 451px; /* for GEOs that may use a background image instead of an inline image as instructed */ }
+
+.main .hardware.iphone.cropped { width:254px; height:451px; margin-bottom:40px; padding:94px 40px 0 41px; background:url(https://www.apple.com/v/ios/f/images/hardware_iphone_cropped.png) 50% 0 no-repeat; background-size:334px 550px; }
+.main .hardware.iphone.cropped .screen { width:254px; height:451px; margin-bottom:12px; background-size:254px 451px; }
+
+.main .hardware.ipodtouch { width:254px; height:568px; margin-bottom:8px; padding:95px 43px 0; background:url(https://www.apple.com/v/ios/f/images/hardware_ipodtouch.jpg) 50% 0 no-repeat; background-size:340px 665px; }
+.main .hardware.ipodtouch.cropped { background:url(https://www.apple.com/v/ios/f/images/hardware_ipodtouch_cropped.png) 50% 0 no-repeat; background-size:334px 550px; }
+
+.main .hardware.ipad { width:955px; height:735px; padding:100px 44px 0; background:url(https://www.apple.com/v/ios/f/images/hardware_ipad.jpg) 50% 0 no-repeat; background-size:955px 735px; }
+
+.main .hardware.ipad.cropped { width:955px; height:636px; padding:0px 44px 0; background:url(https://www.apple.com/v/ios/f/images/hardware_ipad_cropped.jpg) 50% 0 no-repeat; background-size:955px 636px; }
+.main .hardware.ipad.cropped .screen { margin-top:51px; margin-left:45px; }
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5) and (min-device-width:321px),
+       only screen and (min--moz-device-pixel-ratio:1.5) and (min-device-width:321px),
+       only screen and (min-device-pixel-ratio:1.5) and (min-device-width:321px) {
+	.main .hardware.iphone { background-image:url(https://www.apple.com/v/ios/f/images/hardware_iphone_2x.png); }
+	.main .hardware.ipodtouch.cropped { background-image:url(https://www.apple.com/v/ios/f/images/hardware_ipodtouch_cropped_2x.png); }
+}
+
+/* Coming Soon badges */
+.coming-soon { padding:2px 9px; border:1px solid #aaa; border-radius:4px; color:#999; font-weight:normal; letter-spacing:-1px; *letter-spacing:0; font-size:13px; line-height:1.4em; }
+h3 .coming-soon,
+h4 .coming-soon { position:relative; top:-6px; margin-left:5px; padding:4px 10px; }
+
+@media only screen and (max-device-width:768px) {
+	.coming-soon { letter-spacing:normal; }
+}
+
+/* Product Header
+------------------------*/
+@media only screen and (max-device-width:768px) {
+	#globalheader { z-index:10; }
+}
+
+#productheader { position:relative; z-index:3; margin:0 auto; border-bottom:1px solid #e5e5e5;
+	background:#fff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,0.7)));
+	background:-webkit-linear-gradient(top, rgba(255,255,255,1) 30%, rgba(255,255,255,0.7) 100%);
+	background:-moz-linear-gradient(top, rgba(255,255,255,1) 30%, rgba(255,255,255,0.7) 100%);
+	background:linear-gradient(top, rgba(255,255,255,1) 30%, rgba(255,255,255,0.7) 100%);
+}
+#productheader h2 { height:27px; margin:2px 1px 5px 7px; padding-bottom:4px; }
+#productheader h2 a { text-indent:0; }
+#productheader ul li a { margin-left:24px; }
+
+#productheader h2.ios7-header { margin:2px 1px 5px 7px !important; }
+#productheader .coming-soon { display:inline; float:left; margin-top:3px; margin-left:10px; width:73px; }
+
+@media only screen and (max-device-width:768px) {
+	#productheader { margin-left:0px; margin-right:0px; padding-left:22px; padding-right:22px; }
+}
+
+#overview #pn-overview a,
+#features #pn-features a,
+#what-is  #pn-what-is a,
+#design   #pn-design a { color:#999 !important; cursor:default; }
+
+
+/* ScreenSequence
+------------------------*/
+/* Screen */
+.main .screensequence-enhanced { position:relative; z-index:1000; }
+.main .screensequence-enhanced .screensequence-screen { background-size:254px 451px; }
+.main .screensequence-enhanced .screensequence-element { display:block; position:absolute; z-index:1001; top:0; left:0; }
+.main .screensequence-enhanced .screensequence-posterframe { z-index:1002; }
+.main .screensequence-enhanced.screensequence-flow .screensequence-posterframe { width:256px; height:456px; } /* larger because it was cut from canvas */
+.main .screensequence-enhanced.screensequence-video .screensequence-posterframe { width:254px; height:451px; }
+
+.main .screen .hires,
+.main .screen.endstate,
+.main .screensequence-video .screen .hires { width:254px; height:451px; background-size:254px 451px; }
+.main .screensequence-flow .screen .hires { background-size:256px 456px; }
+
+.main .screensequence-enhanced,
+.main .screensequence-enhanced .replay,
+.main .screensequence-enhanced.screensequence-playing,
+.main .screensequence-enhanced.screensequence-playing .replay { cursor:default; }
+
+.main .screensequence-enhanced.screensequence-ended,
+.main .screensequence-enhanced.screensequence-ended .replay { cursor:pointer; }
+
+/* Triggers */
+.main .screensequence-trigger { display:inline-block; *display:inline; *zoom:1; }
+.main .screensequence-trigger.replay { padding-left:18px; padding-right:10px; color:#08c; background:url(https://www.apple.com/v/ios/f/images/replay.png) no-repeat 0 4px; background-size:13px 13px; opacity:0; *display:none;
+	-webkit-transition:opacity 0.25s ease-out;
+	   -moz-transition:opacity 0.25s ease-out;
+	        transition:opacity 0.25s ease-out;
+}
+.main .screensequence-ended .screensequence-trigger.replay { opacity:1; }
+
+.main .screensequence-enhanced.screensequence-disabled,
+.main .screensequence-enhanced.screensequence-disabled span,
+.main .screensequence-enhanced.screensequence-disabled:hover,
+.main .screensequence-enhanced.screensequence-disabled:hover span { cursor:default; }
+
+.main .screensequence-enhanced.screensequence-ended a { cursor:pointer; }
+
+.main .screensequence-enhanced:hover .screensequence-trigger { text-decoration:none; }
+.main .screensequence-enhanced:hover .screensequence-trigger.replay { text-decoration:underline; }
+
+@media only screen {
+	.main .hardware .screensequence-trigger.replay { background-image:url(https://www.apple.com//v/ios/f/images/replay.svg); }
+}
+
+/* Large play buttons for iOS6+ */
+/*.main .screensequence-enhanced { position:relative; z-index:1; }*/
+/*.main .screensequence-enhanced .screensequence-posterframe { z-index:1002; }*/
+.main .screensequence-enhanced.large-play-button .play-large { position:absolute; z-index:1100; top:47.8%; left:50.3%; width:92px; height:92px; margin:-46px; background:url(https://www.apple.com/v/ios/f/images/overview_play_large.png) no-repeat 0 0; text-indent:-9999em; overflow:hidden; }
+.main .screensequence-enhanced.large-play-button .replay { display:none; }
+
+
+/* Large play buttons for iOS6+ */
+.main .screensequence-enhanced.large-play-button .play-large { position:absolute; z-index:1100; top:47.8%; left:50.3%; width:92px; height:92px; margin:-46px; background:url(https://www.apple.com/v/ios/f/images/overview_play_large.png) no-repeat 0 0; text-indent:-9999em; overflow:hidden; }
+.main .screensequence-enhanced.large-play-button .replay { display:none; }
+
+@media only screen and (max-device-width:768px) {
+	.main .screensequence-enhanced.screensequence-ended .play { color:#666; }
+	.main .screensequence-enhanced.screensequence-ended .play .icon { background-position:0 0; }
+}
+
+/* Gallery Styles
+------------------------*/
+.content .gallery { *position:static; }
+.gallery:after,
+.gallery-view:after { content:'.'; display:block; height:0; clear:both; visibility:hidden; }
+
+.gallery { position:relative; z-index:1; }
+.gallery .gallery-view,
+.gallery .gallery-content { width:100%; }
+.gallery .gallery-content { display:none; }
+.gallery .gallery-view .gallery-content { display:block; }
+
+/* video gallery */
+.gallery-view { position:relative; z-index:1; }
+.gallery-view .gallery-video { position:absolute; z-index:1; width:848px; height:480px; padding-top:50px; margin-top:-325px; margin-left:-424px; top:50%; left:50%; }
+.gallery-view .gallery-video .moviePanel { width:848px; height:480px; }
+.gallery-view .gallery-video .close { position:absolute; z-index:1010; top:12px; left:-35px; width:29px; height:29px; color:transparent; overflow:hidden; background:url(https://www.apple.com/v/ios/f/images/button_close.png) no-repeat 0 0; _behavior:url(/global/scripts/lib/iepngfix.htc); -webkit-transform:translateZ(0); *text-indent:-999em; }
+
+/* paddle nav */
+.gallery .paddle-nav li .arrow { display:block; position:absolute; z-index:1012; top:0; width:68px; height:100%; padding:0 68px; outline:none; opacity:0; cursor:pointer; *background-image:url(https://www.apple.com/global/elements/blank.gif);
+	-webkit-transition:opacity 0.25s ease-out;
+	   -moz-transition:opacity 0.25s ease-out;
+	        transition:opacity 0.25s ease-out;
+}
+.gallery:hover .paddle-nav li .arrow { opacity:0.85; }
+
+.gallery .paddle-nav li .arrow.disabled { display:none; }
+.gallery .paddle-nav li .arrow b { display:block; margin-top:0; width:68px; height:131px; padding:0; background-repeat:no-repeat; background-position:50% 50%; behavior:url(/global/scripts/lib/ie7pngfix.htc); }
+.gallery .paddle-nav li .arrow.prev { left:100px; padding-right:70px; }
+.gallery .paddle-nav li .arrow.prev b { float:left; background-image:url(https://www.apple.com/v/ios/f/images/paddle_prev.png); background-size:68px 131px; }
+.gallery .paddle-nav li .arrow.next { right:100px; padding-left:70px; }
+.gallery .paddle-nav li .arrow.next b { float:right; background-image:url(https://www.apple.com/v/ios/f/images/paddle_next.png); background-size:68px 131px; }
+
+@media only screen  and (min-device-width:768px)  and (max-device-width:1024px)  and (orientation:portrait) {
+	.gallery .paddle-nav li .arrow b { -webkit-transform:translateZ(0); }
+}
+
+/* toggle nav */
+.toggle-nav { width:100%; margin:0 auto; text-align:center; }
+.toggle-nav li,
+.toggle-nav li a { display:-moz-table-cell; display:inline-block; *display:inline; *zoom:1; }
+.toggle-nav li a { margin-right:-2px; margin-left:-2px; font-size:.9em; color:#666; padding:5px 16px 6px; min-width:133px; border:1px solid #cfcfcf; border-left:none; *border-left-color:transparent; text-decoration:none; background-color:#FFF; }
+.toggle-nav li a:hover {
+	background-color:#ebebeb;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#f6f6f6), to(#ebebeb));
+	background:-moz-linear-gradient(100% 100% 90deg, #ebebeb, #f6f6f6);
+}
+.toggle-nav li:first-child a {
+	-webkit-border-radius:6px 0 0 6px; -moz-border-radius:6px 0 0 6px; border-radius:6px 0 0 6px;
+	-webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none;
+}
+.toggle-nav li:last-child a { -webkit-border-radius:0 6px 6px 0; -moz-border-radius:0 6px 6px 0; border-radius:0 6px 6px 0; margin-left:-3px; }
+.toggle-nav li a.first-child { border-left:1px solid #cfcfcf; }
+.toggle-nav li a.last-child { border-left:1px solid #cfcfcf; }
+
+.toggle-nav li a.active { color:#fff; cursor:default; text-decoration:none; border:1px solid #2284d1; background:#59b1f6; }
+
+/* paddle nav adjustment for iPad and iPhone */
+@media only screen and (max-device-width:768px) {
+	.gallery .paddle-nav li .arrow { display:none; }
+}
+/* paddle nav adjustment for Large Desktop */
+@media only screen and (min-width:1140px) {
+	.gallery .paddle-nav li .arrow { background:transparent; }
+	.gallery .paddle-nav li .arrow.prev { left:0; padding-right:70px; }
+	.gallery .paddle-nav li .arrow.next { right:0; padding-left:70px; }
+}
+
+/* outer dot nav */
+.gallery .outer-dot-nav { position:absolute; z-index:1012; left:0; width:100%; margin:0; padding:0; bottom:0; text-align:center; line-height:1px; }
+.gallery .outer-dot-nav li,
+.gallery .outer-dot-nav li a { display:-moz-inline-stack; display:inline-block; *display:inline; zoom:1; }
+.gallery .outer-dot-nav li { position:relative; z-index:1; margin:0 8px; width:12px; height:24px; padding:0; line-height:0; }
+.gallery .outer-dot-nav li a { position:absolute; z-index:1; top:10px; left:2px; width:8px; height:8px; background:#bebebe; outline:none; text-indent:-99999px; cursor:default;
+	-webkit-border-radius:50%;
+	   -moz-border-radius:50%;
+	        border-radius:50%;
+}
+.gallery .outer-dot-nav li a:hover { cursor:pointer; background:#666; }
+.gallery .outer-dot-nav li a.active { cursor:default; top:8px; left:0; width:10px; height:10px; border:1px solid #08c; background-color:transparent; }
+
+/* Maps
+------------------------*/
+#maps #main { font-size:1.167em; }
+#maps #main p { margin-bottom:8px; line-height:1.7; font-size:1.16em; }
+#maps header { width:980px; margin-top:91px; }
+#maps header h1 { padding-top:15px; }
+#maps header h1 .icon { margin-bottom:25px; }
+#maps header h2 { margin:10px 0 30px 0; }
+#maps header img.hero { display:block; margin:-49px 0 62px; }
+#maps header .intro { padding-right:670px; font-size:1.1428em; }
+@media only screen and (max-device-width:768px) {
+	#maps header .intro { padding-right:600px; }
+}
+
+#maps .row { padding:0; }
+#maps section h1 { margin-bottom:6px; }
+
+#maps .redesigned { margin-bottom:60px; padding-top:70px; background:url(https://www.apple.com/v/ios/f/images/maps_keyline_top.jpg) top center no-repeat; }
+#maps .redesigned h1,
+#maps .redesigned p { margin-left:535px; }
+#maps .redesigned .hero { margin-top:-270px; }
+
+#maps .navigation { margin-bottom:44px; }
+#maps .navigation h1,
+#maps .navigation p { margin-left:48px; }
+#maps .navigation h1 { padding-top:41px; }
+#maps .navigation .hero { margin-right:20px; padding-left:52px; }
+
+#maps .traffic { margin-bottom:44px; }
+#maps .traffic h1 { padding-top:115px; }
+#maps .traffic .hero { margin-right:50px; margin-left:45px; }
+#maps .traffic p { margin-right:110px; }
+
+#maps .flyover { margin-bottom:60px; }
+#maps .flyover h1,
+#maps .flyover p { margin-left:48px; }
+#maps .flyover h1 { padding-top:160px; }
+#maps .flyover .hero { margin:0 -8px 0 45px; }
+
+#maps .siri { margin-bottom:30px; }
+#maps .siri h1,
+#maps .siri p { margin-left:571px; position:relative; z-index:1; }
+#maps .siri h1 { padding-top:12px; }
+#maps .siri p { margin-right:50px }
+#maps .siri .hero { margin:-254px 0 0 50px; }
+
+#maps .local-search { padding-top:22px; margin-bottom:30px; }
+#maps .local-search h1,
+#maps .local-search p { margin-left:50px; }
+#maps .local-search h1 { padding-top:165px; }
+#maps .local-search .hero { margin-right:45px; margin-left:30px; position:relative; z-index:1; }
+
+#maps .icloud { padding-top:15px; }
+#maps .icloud p { margin-right:82px; margin-left:82px; }
+#maps .icloud .hero { margin-top:10px; margin-left:47px; }
+
+
+/* Developer Video
+------------------------*/
+#videos #productheader .coming-soon { display:none; }
+
+#videos .main { width:848px; padding:45px 66px; }
+#videos header { padding-left:0; background:none; }
+#videos h1 { margin-bottom:20px; font-size:2.1429em; font-weight:bold; }
+
+#videos .gallery-content { position:relative; z-index:1; width:848px; height:480px; margin:0 auto; padding-top:0px; }
+
+#videos ul.default-watch { position:absolute; z-index:2; top:0; left:0; width:100%; padding-top:204px; text-align:center; }
+#videos ul.default-watch li a { position:relative; display:inline-block; color:#fff; font-size:1.1429em; }
+#videos ul.default-watch li a:hover { text-decoration:none; }
+#videos ul.default-watch li a:hover b,
+#videos ul.default-watch li a:hover span { background-position:0 -85px; }
+#videos ul.default-watch li b { display:block; position:absolute; z-index:2; top:0; right:0px; width:50px; height:85px; background:url(https://www.apple.com/v/ios/f/images/watch_cap_right.png) 0 0 no-repeat; }
+#videos ul.default-watch li span { display:block; width:auto; margin-right:50px; padding:31px 0 30px 74px; text-align:left;  background:url(https://www.apple.com/v/ios/f/images/watch_cap_left.png) 0 0 no-repeat; }
+
+/* Video Endstates */
+#videos .endState ul { position:absolute; z-index:1; top:0px; left:0; width:100%; padding-top:24%; text-align:center; }
+#videos .endState ul li { display:inline-block; *display:inline; *zoom:1; *margin-bottom:-40px; }
+#videos .endState ul li a { display:block; position:relative; z-index:1; width:285px; color:#fff; font-size:16px; }
+#videos .endState ul li a:hover { text-decoration:none; }
+#videos .endState ul li a:hover b,
+#videos .endState ul li a:hover span { background-position:0 -85px; text-decoration:none; }
+#videos .endState ul li.watch-again b { display:block; position:absolute; top:-1px; right:0px; width:50px; height:85px; background:url(https://www.apple.com/v/ios/f/images/watch_cap_right.png) 0 0 no-repeat; }
+#videos .endState ul li.watch-again span { display:block; width:auto; margin-right:50px; padding:30px 36px 30px 100px; text-align:left;  background:url(https://www.apple.com/v/ios/f/images/watchagain_cap_left.png) 0 0 no-repeat; }
+
+@media only screen and (max-device-width:768px) {
+	#videos .endState ul { left:125px; width:580px; }
+	#videos .endState ul li.watch-again b { border-bottom:1px solid transparent; } /* helps with sub pixel rendering */
+}
+
+
+/* Facetime
+------------------------*/
+#facetime .row { padding-top:80px; padding-bottom:0; }
+
+#facetime #hero { padding-top:100px; }
+#facetime #hero .intro { font-size:1.143em; }
+#facetime #hero img.flushright { margin-top:-60px; margin-left:45px; }
+
+#facetime #simple .column.last { margin-right:-10px; width:278px; padding-top:120px; }
+
+#facetime #cameras h1 { width:255px; }
+#facetime #cameras img.right { margin:-80px 0 0 20px; }
+
+#facetime #setup { margin:0px -50px; padding:40px 0 0 50px; border:1px solid #c9c9c9; border-top-width:2px; zoom:1;
+	-webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;
+	background:#f1f1f1;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f7f7f7), to(#ededed));
+	background:-moz-linear-gradient(100% 100% 90deg, #f7f7f7, #ededed);
+	box-shadow:0 0 5px #d7d7d7 inset;
+	}
+#facetime #setup ol { margin:0px; list-style-type:none; }
+#facetime #setup ol ul { margin:-6px 0 -3px; }
+#facetime #setup .step { margin-top:80px; zoom:1; }
+#facetime #setup .step h2 { margin-top:13px; *margin-top:0; font-size:1em; line-height:1.4286em; }
+#facetime #setup .step p { margin:12px 0 0px; color:#666; }
+#facetime #setup .step img { display:block; margin:0; }
+#facetime #setup .step img.right { margin-left:-85px; }
+
+
+/* Feature Availability
+------------------------*/
+#availability #main { margin-top:45px; font-size:1.167em; }
+#availability #productheader ul { display:none; }
+
+#availability #main header h1 { margin-bottom:5px; }
+#availability #main header h1 img { margin:0 auto; }
+#availability #main header .intro { margin:0 50px 38px; }
+#availability #main header nav { margin:0 auto 50px; width:660px; }
+#availability #main header nav h1 { font-size:1.2857em; }
+#availability #main header nav li { line-height:1.5em;}
+#availability #main header nav .first { width:266px; }
+#availability #main header nav .last { width:117px; }
+#availability #main header nav .last ul { margin-bottom:34px; }
+
+#availability #main .features { width:935px; padding:50px 0 50px 45px; border-top:1px solid #eaebeb;
+	background:#f9f9f9;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#f7f7f7), to(#fff));
+	background:-moz-linear-gradient(100% 100% 90deg, #f7f7f7, #ededed);
+}
+#availability #main .features h1 { margin-bottom:40px; color:#666666; font-size:1.6923em; }
+#availability #main .features h2.available-soon { margin-top:60px; margin-bottom:8px; color:#f7941d; font-size:1.2143em; }
+#availability #main .features h1 strong { color:#000; font-weight:normal; }
+#availability #main .features li { display:inline-block; *display:inline; *zoom:1; width:230px; line-height:1.8em; }
+#availability #main .features .toplink { float:right; margin-right:72px; padding-right:12px; background:url(https://www.apple.com/global/elements/arrows/uparrow_08c.gif) 100% 50% no-repeat }
+
+
+/* iOS7 Basics
+------------------------*/
+#basics .main { padding:67px 0 30px; }
+#basics .main h1 { margin-bottom:26px; padding-top:45px; }
+#basics .main h2 { margin:0; font-size:1em; line-height:1.55em; color:#333; }
+#basics .main p { line-height:1.68em; }
+
+#basics .hardware.iphone { position:relative; z-index:1; width:292px; padding:95px 0 0 38px; }
+#basics .hardware.iphone .screen { *margin-left:-38px; }
+
+#basics .grid3col,
+#basics .grid2cola { padding-bottom:65px; }
+#basics .grid3col .column,
+#basics .grid2cola .column { text-align:center; }
+#basics .grid3col .column { margin:0; width:324px; }
+#basics .grid3col .column.last { width:331px; }
+#basics .grid3col figcaption { width:268px; margin:0 auto; }
+#basics .grid3col .wider { width:280px; }
+
+#basics .updates h1 { padding-top:0; }
+#basics .updates .intro { padding:0 160px 12px; font-size:1.125em; line-height:1.6667em; color:#404040; }
+
+#basics .airdrop { margin-bottom:77px; }
+#basics .airdrop img.flushright { margin:0 0 10px 8px; }
+#basics .airdrop .center { padding:0 130px; }
+
+#basics .ios img.flushleft { margin:24px 0 13px -166px; }
+#basics .ios .grid2cola .first { width:360px; padding-left:145px; }
+#basics .ios .grid2cola .last { width:250px; padding-right:32px; }
+
+
+/* iOS7 Update
+------------------------*/
+#update .main { padding-top:52px; }
+#update .main h1 { margin-bottom:10px; }
+#update .main h2 { margin-bottom:6px; font-size:1em; line-height:1.55em; color:#333; }
+#update .main p { line-height:1.68em; }
+#update .main p.intro { margin:0 auto 30px; width:730px; font-size:1.125em; line-height:1.75em; }
+#update .main .divider-flat { width:980px; margin:0 -85px; background-position:50% 0; }
+
+#update.update2 .main h2 { margin-bottom:4px;}
+#update.update2 .main .intro { margin:0 auto 30px; width:815px; font-size:1em; line-height:1em; }
+#update.update2 .main .intro p { font-size:1.125em; line-height:1.75em; }
+
+#update .center { position:relative; z-index:2; }
+#update .carplay { margin-top:-54px; margin-bottom:66px; min-height:677px; *height:677px; position:relative; z-index:1; }
+#update .carplay:before,
+#update .carplay:after { content:''; position:absolute; top:0; height:677px; background-position:0 0; background-repeat:no-repeat; }
+#update .carplay:before { left:-296px; width:206px; background-size:206px 677px; }
+#update .carplay:after { right:-294px; width:204px; background-size:204px 677px; }
+#update .carplay .caption { position:relative; width:660px; margin:-227px auto 0; color:#fff; text-align:center; }
+#update .carplay .hero { margin-left:-90px; }
+
+#update.update2 .carplay { margin-top:-54px; margin-bottom:68px; min-height:709px; *height:709px; position:relative; z-index:1; }
+#update.update2 .carplay:before,
+#update.update2 .carplay:after { height:709px; background-position:0 0; background-repeat:no-repeat; }
+#update.update2 .carplay:before { left:-296px; width:206px; background-size:206px 709px; }
+#update.update2 .carplay:after { right:-294px; width:204px; background-size:204px 709px; }
+#update.update2 .carplay .caption { width:800px; margin:-210px auto 0; }
+
+#update .grid2col { width:690px; margin:0 auto 45px; }
+#update .grid2col .column { margin:0; width:328px; text-align:center; }
+#update .grid2col .hardware.iphone { width:292px; height:565px; padding:95px 0 0 38px; *padding-left:0; *position:relative; *z-index:1; }
+#update .grid2col figcaption { margin:0 auto; width:270px; }
+
+#update .music { padding-bottom:20px; }
+#update .music .itunes-radio { margin-left:-164px; margin-bottom:10px; }
+#update .music .column { text-align:center; }
+#update .music .column.first { width:530px; padding-left:60px; }
+#update .music .column.last { width:300px; }
+
+#update .grid3col { width:1024px; margin:0 -18px 45px; *position:relative; *z-index:1; }
+#update .grid3col .column { width:330px; margin-right:12px; margin-left:0; text-align:center; }
+#update .grid3col .column.last { margin-right:10px; }
+#update .grid3col .hardware.iphone { width:292px; height:565px; padding:95px 0 0 38px; *padding-left:0; *position:relative; *z-index:1; }
+#update .grid3col figcaption { margin:0 auto; width:270px; }
+
+#update .bug-fixes { padding-top:60px; padding-left:105px; }
+#update .bug-fixes h2,
+#update.update2 .bug-fixes h2 { margin-bottom:14px; }
+#update .bug-fixes ul { margin-left:40px; line-height:2; }
+
+@media only screen and (max-device-width:768px) {
+	#update .main p.intro { width:668px; }
+	#update .main .intro { width:720px; }
+	#update .carplay p { width:590px; margin:0 auto 10px; }
+	#update .music .column.first { width:480px; padding-left:90px; }
+	#update .music .column.last { width:256px; margin-right:20px; }
+	#update .grid2col figcaption { width:250px; }
+}
+
+
+
+/* Footers
+------------------------*/
+#compatibility-footer { padding:38px 0 65px; width:980px; height:210px; }
+#compatibility-footer h1 { font-size:1.5em; line-height:62px; }
+#compatibility-footer .grid3col .column { margin-left:0; padding-right:23px; }
+#compatibility-footer .grid3col .column h4 { font-size:.625em; line-height:1.5; font-weight:normal; color:#666; }
+#compatibility-footer .grid3col .column img { margin-bottom:12px; display:block; }
+#compatibility-footer .grid3col .column li { display:block; float:left; width:59px; margin-left:18px; text-align:center; }
+#compatibility-footer .grid3col .column li.first-child { margin-left:3px; }
+
+#compatibility-footer .grid3col .first { width:324px; padding-left:0; }
+
+#compatibility-footer .grid3col .column.center { width:186px; padding:0 16px; border:1px solid #d0d0d0; border-width:0 1px; }
+#compatibility-footer .grid3col .column.center li { width:80px; margin:0 6px; }
+
+#compatibility-footer .grid3col .last { width:327px; padding:0; }
+#compatibility-footer .grid3col .last li { width:104px; margin-left:37px; }
+#compatibility-footer .grid3col .last li.retina { width:103px; margin-left:27px; }
+#compatibility-footer .grid3col .last li.mini { width:70px; margin-left:20px; }
+
+/* updated styles */
+#compatibility-footer.updated .grid3col .column { padding-right:26px; }
+#compatibility-footer.updated .grid3col .column li { width:52px; margin-left:16px; }
+#compatibility-footer.updated .grid3col .column li.first-child { margin-left:0; }
+
+#compatibility-footer.updated .grid3col .first { width:324px; }
+
+#compatibility-footer.updated .grid3col .column.center { width:102px; padding:0; }
+#compatibility-footer.updated .grid3col .column.center li { padding-left:7; }
+
+#compatibility-footer.updated .grid3col .last { width:500px; padding:0; }
+#compatibility-footer.updated .grid3col .last li { width:103px; margin-left:15px; }
+#compatibility-footer.updated .grid3col .last li.air { width:94px;  }
+#compatibility-footer.updated .grid3col .last li.mini { width:70px;  }
+
+.design  #pure { position:relative; z-index:1; padding-bottom:1px; }
+.design  #pure .divider-down { height:470px; padding-top:1px; clear:both; }
+.design  #pure .column.last { width:360px; height:410px; padding-top:60px; padding-right:64px; }
+.design  #pure .column.last h1 { position:relative; z-index:1; }
+
+.design #pure #hires-design-simple-hardware { width:489px; height:470px; padding-left:56px; background-image:url(http://images.apple.com/v/ios/f/design/images/design_simple_hardware_2x.png); background-size:545px 472px; }
+
+/* Calendar Screen Sequence */
+.design #hires-design-simple-screen-calendar { width:417px; height:470px; background-size:417px 472px; background-image: url(https://www.appaddict.org/ios-app/aa4-update/images/overivew-related-update.jpg);}
+.design #hires-design-simple-pure-title { width:425px; height:40px; background-image:url(https://www.appaddict.org/ios-app/aa4-update/images/overview-related-title.png);  background-size:425px 40px; }
+
+
+/* sosumi */
+.sosumi { width:940px; margin:18px auto; padding:0 20px; }
+.sosumi a { color:#333; }
+.sosumi ol { margin:0; padding-right:21px; padding-left:21px; }
+.sosumi ul { margin:0; }
+.sosumi li { padding-bottom:5px; }
+.sosumi p { margin:0; padding-bottom:5px; }
+.sosumi small { font-size:1em; }
+ol.sosumi { width:898px; margin:18px auto; }
+
+/* sosumi iOS 7 override */
+.sosumi.keyline { margin:0 auto; padding:20px 20px 0 20px; border-top:1px solid #e5e5e5; }
+
+/* Hi-res Imaging
+------------------------*/
+@media only screen and (-webkit-min-device-pixel-ratio:1.5) and (min-device-width:321px),
+       only screen and (min--moz-device-pixel-ratio:1.5) and (min-device-width:321px),
+       only screen and (min-device-pixel-ratio:1.5) and (min-device-width:321px) {
+	     .design #pure #hires-design-simple-hardware { background-image:url(http://images.apple.com/v/ios/f/design/images/design_simple_hardware_2x.png); }
+.design #hires-design-simple-pure-title {background-image:url(https://www.appaddict.org/ios-app/aa4-update/images/overview-related-title@2x.png);}
+.design #hires-design-simple-screen-calendar {background-image: url(https://www.appaddict.org/ios-app/aa4-update/images/overivew-related-update@2x.jpg);}
+
+		.gallery .paddle-nav.hires li .arrow.prev b { background-image:url(https://www.apple.com/v/ios/f/images/paddle_prev_2x.png); }
+		.gallery .paddle-nav.hires li .arrow.next b { background-image:url(https://www.apple.com/v/ios/f/images/paddle_next_2x.png); }
+}

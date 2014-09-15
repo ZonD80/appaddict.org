@@ -1,0 +1,179 @@
+html {height: 100%; background: #82878f; }
+body {min-height:100%; width: 100%; padding: 0; margin: 0; background: #82878f; background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#82878f), color-stop(100%,#73787e)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #82878f 0%,#73787e 100%); /* Chrome10+,Safari5.1+ */ background: linear-gradient(top, #82878f, #73787e); font: 14px/20px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif; color: #fff; line-height: 1.5em; display: block; position: relative; text-shadow: 0 1px 0 rgba(0,0,0,.25); -webkit-font-smoothing: antialiased;}
+
+a:link {color:#fff; text-decoration: none;}
+a:visited {color:#fff;}
+a:hover {text-decoration: underline;}
+a:active {color:#fff;}
+
+.container a:link {color:#08c; text-decoration: none; font-style: normal;
+}
+.container a:visited {color:#08c;}
+.container a:hover {text-decoration: underline;}
+.container a:active {color:#08c;}
+
+h1, h2, h3, h4, h5, h6, p {font-weight: lighter!important; color: #fff; line-height: 1.5em;}
+h1 {font-size: 48px; text-align:center;}
+h2 {margin:0; padding: 0; font-size: 2.2em;}
+h3 {font-size: 1.5em; margin-top: 0;}
+#wrapper p {margin-top: 0; margin-bottom: 1em;}
+
+.container h1, .container h2, .container h3, .container h4, .container h5, .container h6 {color: #333; text-shadow: none; margin-top: 0;}
+.container p {color: #666; text-shadow: none;}
+
+#wrapper {width: 94%; margin:0 auto; padding: 32px 3% 0; min-width: 280px; }
+.container {width: 92%; padding: 4% 4%; margin-bottom: 18px; background:#eeeeee; border-radius:6px;}
+.divider { margin:0 0 18px 0; border-top:1px dotted #AAAAAA;}
+.offscreen { left:-100000px !important; position: absolute; }
+
+.box-500 {max-width: 500px;}
+.box-600 {max-width: 600px;}
+.box-700 {max-width: 700px;}
+.box-900 {max-width: 900px;}
+.box-1024 {max-width: 1024px;}
+
+.left {float: left;}
+.right {float: right;}
+.clear {clear: both;}
+.center {text-align: center; display: block;}
+.chevron {
+	display: inline-block;
+	width: 10px;
+	height: 17px;
+	background-image: url(/assets/elements/arrows/link-chevron.png);
+	background-repeat:no-repeat;
+	background-position: right 7px;
+	background-size: 6px 10px;
+	text-indent: -9999px;
+}
+.underline {text-decoration: underline !important;}
+
+/***** HEADER *****/
+
+#systems-header { height:60px; width:100%;}
+#systems-header h1 {margin-top: 0;}
+#systems-header h1 a { 
+	position: relative; 
+	left: -12px; 
+	width:182px; 
+	height:40px; 
+	margin:0 auto; 
+	display: block;
+	text-indent: -9999px; 
+	background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/header/developer-logo-white.png); 
+}
+
+/***** SECTIONS *****/
+
+.modular-content {overflow: hidden;} 
+
+.column-33 {width: 33%; float: left; margin-bottom: 36px;}
+.column-50 {width: 50%; float: left; margin-bottom: 36px;}
+.column-50 p {padding-right: 24px;}
+
+.links-list {list-style:none; margin: 0; padding: 0;}
+.hlist {list-style: none; margin: 0; padding: 0; text-align:center;}
+.hlist li {display: inline-block; padding: 12px 12px;}
+
+/***** FOOTER *****/
+
+.content-spacer { height: 84px; }
+
+#systems-footer {color: #D0D0D0; font-size: 11px; position: absolute; bottom: 0; text-align: center; margin: 0 auto 12px; width: 100%; min-width: 280px; text-shadow: none;}
+#systems-footer p { display: inline-block; vertical-align: top; margin: 3px; color: #D0D0D0; padding-left: 10px;}
+
+ul.footer-links {display: inline-block; list-style: none outside; margin: 0; padding: 0; clear: both;}
+ul.footer-links li {float: left; display: inline;}
+ul.footer-links a {margin-left: 10px; padding-left: 10px; color: #D0D0D0; border-left: 1px solid #D0D0D0;}
+ul.footer-links a.first {margin-left: 0; border-left: 0;}
+ul.footer-links::after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+/***** BUTTONS *****/
+
+.button {margin: 4% 12px 4% 0; background: #ebebeb; background: -webkit-gradient(linear,left top,left bottom,from(white),to(#ebebeb)); background: -moz-linear-gradient(top,white,#ebebeb); background-image: linear-gradient(to bottom,#fff 0,#ebebeb 100%); -webkit-border-radius: 4px; border-radius: 4px; color: #0085cc !important; border: 1px solid #aaa; display: inline-block; padding: 8px 24px 8px 24px; font-weight:normal; text-shadow: none; text-align: center;}
+.button:hover { color: #0085cc; -webkit-border-radius: 4px; border-radius: 4px; background: #fff; background: -webkit-gradient(linear,left top,left bottom,from(white),to(#ddd)); background: -moz-linear-gradient(top,white,#ddd); background-image: linear-gradient(to bottom,#fff 0,#ddd 100%); text-decoration: none;}
+
+.button.blue {color: #ffffff !important; border-top-color: #1992da; border-left-color: #0c75bb; border-right-color: #0c75bb; border-bottom-color: #00589c; -webkit-box-shadow: inset 0 1px 1px 0 #6fc5f5; box-shadow: inset 0 1px 1px 0 #6fc5f5; background: #117ed2; background: -webkit-gradient(linear,left top,left bottom,from(#37aaea),to(#117ed2)); background: -moz-linear-gradient(top,#37aaea,#117ed2); background-image: -o-linear-gradient(top,#37aaea 0,#117ed2 100%); background-image: linear-gradient(to bottom,#37aaea 0,#117ed2 100%);}
+.button.blue:hover {background: -webkit-gradient(linear, left top, left bottom, from(#37aaea), to(#0e63b0)) #37aaea; background: -moz-linear-gradient(top, #37aaea 0%, #0e63b0 100%) #37aaea; background: linear-gradient(to bottom, #37aaea 0%, #0e63b0 100%) #37aaea;}
+
+.button-clear {margin: 4% 12px 4% 0; display: inline-block; padding: 8px 24px 8px 24px; font-weight:normal; text-shadow: none; text-align: center; border: 1px solid #FFF; -webkit-border-radius: 4px; border-radius: 4px;}
+.button-clear.black {color: #000; border: 1px solid #000;}
+.button-clear:hover {text-decoration: none;}
+
+form .button {margin: 4% 0 0 12px;}
+.submit {margin: 0 0 0 2.5% !important; padding: 8px 0; display: inline-block; width: 22%;}
+
+/***** FORMS *****/
+
+form {padding: 4% 4%; background: #e8e8e8; overflow: hidden;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); background: linear-gradient(to bottom, #e8e8e8 0%,#cccccc 100%); border: 1px solid #bbb; border-top: none; box-shadow:0px 2px 2px rgba(0, 0, 0, .1); -webkit-border-radius: 6px; border-radius: 6px; margin-bottom: 12px; margin-top: 28px;}
+form.noBox{
+	padding: 0; background: transparent; overflow: hidden;
+	border:none; box-shadow:none; -webkit-border-radius: 0; border-radius: 0;
+}
+input[type=text], textarea {font-size: 14px; padding: 6px 2%; border: -webkit-border-radius: 6px; border: none; border-radius: 6px; height: 26px; -webkit-box-shadow: inset 0px 1px 2px rgba(0,0,0,.4); box-shadow: inset 0px 1px 2px rgba(0,0,0,.4); -webkit-appearance:none; width: 96%; margin-top: 4%;}
+textarea {padding: 12px 2%; min-height: 100px; display: inline-block; font: 14px/20px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;}
+
+input:first-child {margin-top: 0;}
+
+.input-search {width: 70% !important;}
+
+/***** SLIDER *****/
+
+#list-looper {
+	list-style: none;
+	position: relative;
+	display: block;
+	padding: 0;
+	margin: 0;
+	height: 100px;
+}
+
+#list-looper li{
+	display: block;
+	position: absolute;
+	width: 100%;
+	display: none;
+	opacity: 0;
+}
+
+#list-looper li h1 {margin: 0; font-size:36px}
+
+#list-looper li.active {
+	display:block;
+	-moz-animation:cycle 4s linear;	
+	-webkit-animation:cycle 4s linear;
+	animation: cycle 4s linear;	
+}
+
+@-webkit-keyframes cycle {
+	0%  { opacity:0; }
+	10%{ opacity:1; }
+	90% { opacity:1; }
+	100% { opacity:0; }
+}
+
+@-moz-keyframes cycle {
+	0%  { opacity:0; }
+	10%{ opacity:1; }
+	90% { opacity:1; }
+	100% { opacity:0; }
+}
+
+@keyframes cycle {
+	0%  { opacity:0; }
+	10%{ opacity:1; }
+	90% { opacity:1; }
+	100% { opacity:0; }
+}
+
+/***** MEDIA QUERIES *****/
+
+@media only screen and (max-width:480px) {
+	.column-33 {width: 50% !important; float: left; margin-bottom: 36px;}
+	.column-50 {width: 100% !important; float: left; margin-bottom: 36px;}
+}
+
+@media (-webkit-min-device-pixel-ratio:1.5), (min-device-pixel-ratio:1.5) {
+	#systems-header h1 a { background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/header/developer-logo-white_2x.png); background-size: 182px 40px;}
+}

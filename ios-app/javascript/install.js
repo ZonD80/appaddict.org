@@ -1,0 +1,1 @@
+function installAA() {window.location  = "itms-services://?action=download-manifest&url=https://dev.appaddict.org/assets/org_appaddict_ios/manifest"}

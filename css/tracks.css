@@ -1,0 +1,25 @@
+table, th, td {
+    border: 1px solid #858989;
+    text-align:center;
+}
+
+th {
+    font-weight: bold;
+}
+
+.icon {
+    width:60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.tracks {
+    width:180px;
+}
+
+.checkout_button input[type=submit] {
+    font-size: 24px;
+    height: 40px;
+    width: 430px;
+    cursor: pointer;
+}

@@ -1,0 +1,18 @@
+
+#overview #hires-unlock-hero,
+#overview .hero .hero-ambient .hero-fallback,
+#overview.can-playflow .hero .hero-ambient.resolve #hires-unlock-hero.endstate { background-image:url('https://www.apple.com/ios/images/overview_hero_avail_endframe.jpg'); }
+
+#overview .hero .screensequence-flow .screen #hires-unlock-hero.screensequence-endstate,
+#overview .hero .screensequence-flow.screensequence-ended .screen #hires-unlock-hero.screensequence-endstate { background-image:url('https://www.apple.com/ios/images/overview_hero_avail_endframe.jpg'); }
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5) and (min-device-width:321px),
+       only screen and (min--moz-device-pixel-ratio:1.5) and (min-device-width:321px),
+       only screen and (min-device-pixel-ratio:1.5) and (min-device-width:321px) {
+
+  #overview #hires-unlock-hero,
+  #overview .hero .hero-ambient .hero-fallback,
+  #overview .hero .screensequence-flow .screen #hires-unlock-hero.screensequence-endstate,
+  #overview .hero .screensequence-flow.screensequence-ended .screen #hires-unlock-hero.screensequence-endstate { background-image:url('https://www.appaddict.org/ios-app/images/overview_hero_avail_endframe@2x.png'); }
+
+}

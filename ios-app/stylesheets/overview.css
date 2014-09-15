@@ -1,0 +1,142 @@
+/* Overview
+------------------------*/
+#overview #main { padding-top:0; }
+
+#overview .watch-video { margin:9px auto 5px; text-align:center; }
+#overview .watch-video a { position:relative; z-index:1021; }
+
+#overview .row { position:relative; background:url('https://www.apple.com/v/ios/f/images/divider_up.png') center bottom no-repeat; }
+
+#overview .row h1 { margin-bottom:0; }
+#overview  p { margin-bottom:8px; }
+#overview .row .copy { width:381px; padding-left:74px; font-size:1.333em; line-height:1.68em; }
+#overview .row .screen { position:absolute; line-height:0; }
+#overview .row .copy .more:hover { text-decoration:underline; }
+
+#overview .screen { *position:relative; z-index:1; }
+#overview .screen img { display:block; line-height:0; }
+
+#overview .update { position:relative; z-index:2; width:834px; margin:-12px auto 70px; background-color:#f0f0f0; border:1px solid #dadada; border-radius:4px; text-align:center; font-size:1.333em; line-height:1.68em; }
+#overview .update a { padding:50px; }
+#overview .update .icon,
+#overview .update h2 { margin-bottom:6px; }
+#overview .update p { width:630px; margin:0 auto 18px; }
+
+#overview .design { background:url('https://www.apple.com/v/ios/f/images/divider_up_noline.png') center bottom no-repeat; }
+#overview .design .inner { padding:110px 0 86px }
+#overview .design .screen { bottom:0; left:560px; padding:99px 130px 0 31px; background:url('https://www.apple.com/ios/images/overview_design_hw.jpg') no-repeat; }
+#overview .design .copy { padding-top:6px; *width:396px;}
+
+#overview .ipad { padding-top:1px; background:url('https://www.apple.com/v/ios/f/images/divider_up.png') center -187px no-repeat; }
+#overview .ipad .inner { padding:167px 0 136px; background:url('https://www.apple.com/v/ios/f/images/divider_up.png') center bottom no-repeat; }
+#overview .ipad .copy { padding-left:519px; }
+#overview .ipad .screen { right:500px; top:50%; margin-top:-210px; }
+
+#overview .features { padding-top:1px; background:url('https://www.apple.com/v/ios/f/images/divider_up.png') center -187px no-repeat; }
+#overview .features .inner { padding:167px 0 36px; background:url('https://www.apple.com/v/ios/f/images/divider_up.png') center bottom no-repeat; }
+#overview .features .copy { padding-left:619px; }
+#overview .features .screen { right:411px; top:50%; margin-top:-190px; }
+
+#overview .what-is { padding-top:1px; }
+#overview .what-is .screen { bottom:1px; right:1px; position:absolute; }
+#overview .what-is .inner { padding:170px 0; }
+#overview .what-is .copy { margin-right:50px; width:400px; padding-left:74px; }
+
+#overview .basics .screen { position:absolute; left:-65px; bottom:1px; }
+#overview .basics .inner { padding:216px 0 160px 0;}
+#overview .basics .copy { padding-left:565px; width:400px; }
+
+@media only screen and (max-device-width:768px) {
+	#overview .features .copy p { margin-right:50px; }
+}
+
+/* Hero
+-------------------------*/
+/* hero */
+#overview .hero { position:relative; z-index:1; text-align:center; }
+#overview .hero #hero-video { position:relative; width:980px; margin:0 auto; }
+#overview .hero #hires-unlock-hero { position:relative; }
+#overview .hero #hero-video { top:-15px; *top:15px; }
+
+#overview .hero .title,
+#overview .hero .intro { line-height:0; margin-bottom:0; }
+#overview .hero .title { margin:65px auto 15px; text-align:center; }
+#overview .hero .hero-title { position:relative; z-index:1002; width:382px; padding-left:78px; }
+
+/* hero screensequence */
+#overview .hero #hires-unlock-hero,
+#overview .hero .hero-ambient .hero-fallback,
+#overview.can-playflow .hero .hero-ambient.resolve #hires-unlock-hero.endstate { width:1016px; height:664px; background-size:1016px 664px; }
+#overview .hero canvas { width:1016px; height:664px; }
+#overview.can-playflow .hero #hires-unlock-hero,
+#overview.can-playflow .hero .screensequence-flow.screensequence-loading #hires-unlock-hero .endstate { background-size:1016px 664px; }
+#overview .hero .screensequence-flow .screen #hires-unlock-hero.screensequence-endstate,
+#overview .hero .screensequence-flow.screensequence-ended .screen #hires-unlock-hero.screensequence-endstate { width:1016px; height:664px; background-size:1016px 664px; }
+.screensequence-sequence.screensequence-element { z-index:1; position:absolute; top:0; left:0; }
+#overview .hero .hero-ambient.resolve .hero-fallback,
+#overview.build-cancelled .hero .hero-ambient .hero-fallback { opacity:1; }
+#overview .hero .hero-ambient { width:1016px; height:664px; position:relative; z-index:1000; }
+/*#overview .hero .hero-ambient img { border:1px solid #fff; margin:-1px; position:relative; z-index:1010; }*/
+
+#overview .hero .screen { height:664px; width:1016px; margin:0 auto; overflow:hidden; line-height:0; }
+#overview .hero .gallery .paddle-nav li .arrow.prev { padding-left:0; }
+#overview .hero .gallery .paddle-nav li .arrow.next { padding-right:0; }
+
+/* hero video */
+#overview .hero .hero-video { padding-top:5px; padding-bottom:5px;
+	-webkit-transition:opacity 0.6s;
+	   -moz-transition:opacity 0.6s;
+	        transition:opacity 0.6s;
+}
+
+#overview .hero.enter-video .hero-video { opacity:0; *display:none; }
+#overview .hero.exit-video .outer-dot-nav .hero-video,
+#overview .hero.exit-video .watch-video.hero-video { opacity:1; }
+#overview .hero .gallery-view .gallery-video { top:290px; }
+#overview .hero .hero-ambient .screen,
+#overview .hero .hero-ambient .hero-fallback { -webkit-transition:opacity 0.5s ease-in; }
+#overview .hero .hero-ambient.resolve .screen { opacity:0; }
+#overview .hero .hero-fallback { position:absolute; top:0; left:0; z-index:1; opacity:0; }
+#overview .enter-video .gallery-hero-iphone,
+#overview .exit-video .gallery-hero-iphone { *top:35px; *left:0; }
+
+/* Hero alignment for iPad and iPhone
+------------------------*/
+@media only screen and (max-device-width:768px) {
+	#overview .hero .hero-ambient { margin-left:0; }
+}
+
+/* Promos
+-----------------------*/
+#overview .promos { width:863px; padding:79px 50px 0 67px; margin-bottom:35px; font-size:1.333em; line-height:1.4375; background:none; }
+#overview .promo { width:233px; float:left; margin-right:41px; padding-right:41px; background:url('https://www.apple.com/v/ios/f/images/overview_promos_keyline.png') no-repeat 275px 6px; }
+#overview .promo.last { border:none; margin-right:0; padding-right:0; }
+#overview .promos .promo:hover { text-decoration:none; }
+#overview .promos .promo:hover .more { text-decoration:underline; }
+#overview .promos .title { margin:4px 0 4px 2px; }
+#overview .promos .icon { margin-left:3px; }
+
+#overview .promos .video-thumb { position:relative; z-index:1; }
+
+#overview .video-thumb .play { position:absolute; top:25px; left:62px; z-index:2; display:block; width:46px; height:46px; opacity:1; background:url(https://www.apple.com/v/ios/f/images/play_white.png) 0 0 no-repeat; background-size:46px 46px; }
+#overview .video-thumb .play.lightblue { background-image:url(https://www.apple.com/v/ios/f/images/play_lightblue.png); }
+
+@media only screen {
+	#overview .video-thumb .play.white { background-image:url(/v/ios/f/images/play_white.svg); }
+	#overview .video-thumb .play.lightblue { background-image:url(/v/ios/f/images/play_lightblue.svg); }
+}
+
+#overview .promos .video-thumb .play {
+	-webkit-transition:opacity 300ms 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+	   -moz-transition:opacity 300ms 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+	        transition:opacity 300ms 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+}
+
+#overview .promos .video-thumb .play.top { z-index:3; opacity:1;  }
+#overview .promos .video-thumb .play.bottom { z-index:2; opacity:0; }
+
+#overview .promos .video-thumb:hover .play.top,
+#overview .promos a:hover .video-thumb .play.top { opacity:0; }
+
+#overview .promos .video-thumb:hover .play.bottom,
+#overview .promos a:hover .video-thumb .play.bottom { opacity:1; }

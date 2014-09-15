@@ -1,0 +1,1164 @@
+@import url('font-awesome.css');
+
+/*
+** Copyright © 2013 Apple Inc.
+** All rights reserved.
+*/
+
+label { cursor: pointer;} 
+body,button,input{font-family:"Helvetica","Arial";font-smooth:always;-webkit-font-smoothing:antialiased}
+body.win,body.win button,body.win input,body.win select,body.win textarea{-webkit-font-smoothing:subpixel-antialiased}
+body.jpn,body.jpn button,body.jpn input,body.geo-jpn,body.geo-jpn button,body.geo-jpn input{font-family:"Hiragino Kaku Gothic Pro W3","MS PGothic","Helvetica","Arial"}
+@-webkit-keyframes generic-loading-spinner-animation{0%{ -webkit-transform:rotate(0deg)}
+8.32%{-webkit-transform:rotate(0deg)}
+8.33%{-webkit-transform:rotate(30deg)}
+16.65%{-webkit-transform:rotate(30deg)}
+16.66%{-webkit-transform:rotate(60deg)}
+24.99%{-webkit-transform:rotate(60deg)}
+25%{-webkit-transform:rotate(90deg)}
+33.32%{-webkit-transform:rotate(90deg)}
+33.33%{-webkit-transform:rotate(120deg)}
+41.65%{-webkit-transform:rotate(120deg)}
+41.66%{-webkit-transform:rotate(150deg)}
+49.99%{-webkit-transform:rotate(150deg)}
+50%{-webkit-transform:rotate(180deg)}
+58.32%{-webkit-transform:rotate(180deg)}
+58.33%{-webkit-transform:rotate(210deg)}
+66.65%{-webkit-transform:rotate(210deg)}
+66.66%{-webkit-transform:rotate(240deg)}
+74.99%{-webkit-transform:rotate(240deg)}
+75%{-webkit-transform:rotate(270deg)}
+83.32%{-webkit-transform:rotate(270deg)}
+83.33%{-webkit-transform:rotate(300deg)}
+91.65%{-webkit-transform:rotate(300deg)}
+91.66%{-webkit-transform:rotate(330deg)}
+100%{-webkit-transform:rotate(330deg)}
+}
+a.anchor[name]{height:0;width:0}
+.single-line-clip{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.no-display{display:none!important}
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,abbr,article,aside,command,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,summary,time{margin:0;padding:0}
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th,figcaption{font-size:1em;font-weight:normal;font-style:normal}
+fieldset,iframe{border:0}
+caption,th{text-align:left}
+table{border-collapse:collapse;border-spacing:0}
+article,aside,footer,header,hgroup,nav,section,figure,figcaption{display:block}
+html{background-color:#FFFFFF}
+.clear{clear:both}
+.clearer{clear:both;display:block;margin:0;padding:0;height:0;line-height:1px;font-size:1px}
+.selfclear{zoom:1}
+.selfclear:after{content:'.';display:block;height:0;clear:both;visibility:hidden}
+img{border:0}
+#container{width:0px;margin:0 auto;position:relative}
+#main{width:100%;position:relative;}
+#content{padding:18px 20px;position:relative;color:#333}
+#breadcrumb{clear:both;text-align:center;margin:18px auto;clear:both;font-size:10px;color:#686868}
+.apple_com-content{background:#fff;border:1px solid;border-color:#e5e5e5 #dbdbdb #d2d2d2;-webkit-box-shadow:rgba(0,0,0,.3) 0 1px 3px;-moz-box-shadow:rgba(0,0,0,.3) 0 1px 3px;box-shadow:rgba(0,0,0,.3) 0 1px 3px}
+.apple_com-content:nth-child(1n){border:0}
+.apple_com-content,.rounded{border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;-o-border-radius:4px;-khtml-border-radius:4px}
+.shadow{-webkit-box-shadow:rgba(0,0,0,.35) 0 1px 3px;-moz-box-shadow:rgba(0,0,0,.35) 0 1px 3px;box-shadow:rgba(0,0,0,.35) 0 1px 3px}
+.callout{border-radius:7px;-webkit-border-radius:7px;-moz-border-radius:7px;-o-border-radius:7px;-khtml-border-radius:7px}
+.roundedtop{border-radius:4px 4px 0 0;-webkit-border-top-left-radius:4px;-webkit-border-top-right-radius:4px;-moz-border-radius:4px 4px 0 0;-o-border-radius:4px 4px 0 0;-khtml-border-radius:4px 4px 0 0}
+.roundedbottom{border-radius:0 0 4px 4px;-webkit-border-bottom-left-radius:4px;-webkit-border-bottom-right-radius:4px;-moz-border-radius:0 0 4px 4px;-o-border-radius:0 0 4px 4px;-khtml-border-radius:0 0 4px 4px}
+.roundedright{border-radius:0 4px 4px 0;-webkit-border-top-right-radius:4px;-webkit-border-bottom-right-radius:4px;-moz-border-radius:0 4px 4px 0;-o-border-radius:0 4px 4px 0;-khtml-border-radius:0 4px 4px 0}
+.roundedleft{border-radius:4px 0 0 4px;-webkit-border-top-left-radius:4px;-webkit-border-bottom-left-radius:4px;-moz-border-radius:4px 0 0 4px;-o-border-radius:4px 0 0 4px;-khtml-border-radius:4px 0 0 4px}
+.roundedtopleft{border-radius:4px 0 0;-webkit-border-top-left-radius:4px;-moz-border-radius:4px 0 0;-o-border-radius:4px 0 0;-khtml-border-radius:4px 0 0}
+.roundedtopright{border-radius:0 4px 0 0;-webkit-border-top-right-radius:4px;-moz-border-radius:0 4px 0 0;-o-border-radius:0 4px 0 0;-khtml-border-radius:0 4px 0 0}
+.roundedbottomleft{border-radius:0 0 0 4px;-webkit-border-bottom-left-radius:4px;-moz-border-radius:0 0 0 4px;-o-border-radius:0 0 0 4px;-khtml-border-radius:0 0 0 4px}
+.roundedbottomright{border-radius:0 0 4px 0;-webkit-border-bottom-right-radius:4px;-moz-border-radius:0 0 4px 0;-o-border-radius:0 0 4px 0;-khtml-border-radius:0 0 4px 0}
+.column{float:left}
+.grid5col .column{width:18.4%;margin-left:2%}
+.column.first,.column.last{margin-left:0!important}
+.column.last{float:right!important}
+#container:after,#content:after,.grid5col:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+#container,#content,.grid5col{zoom:1}
+body{font:12px/18px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;background-color:transparent;color:#333;-webkit-font-smoothing:antialiased}
+a{color:#08c}
+a:link,a:visited,a:active{text-decoration:none}
+a:hover{text-decoration:underline}
+@media only screen{a.more,em.more,span.more{ background-image:url(/images/apple/morearrow_08c.svg)}
+a.morelarge,em.morelarge,span.morelarge{background-image:url(/images/apple/morearrow_big_08c.svg)}
+a.lesslarge,em.lesslarge,span.lesslarge{background-image:url(/images/apple/lessarrow_big_08c.svg)}
+}
+em.more,span.more,em.external,span.external{color:#08c;font-style:normal;cursor:pointer}
+.nowrap{white-space:nowrap}
+em,i,cite{font-style:italic}
+.sosumi{font-size:10px!important;line-height:1.5;color:#888}
+h1,h2,h3,h4,h5,h6,strong{color:#000}
+h1,h2,h3,h4{font-weight:bold}
+h2,h3,h4{line-height:18px}
+h1,h2{margin-bottom:18px}
+h2{font-size:16px}
+h3{font-size:1em}
+h4{font-size:10px}
+p{margin-bottom:18px}
+ul{list-style:none outside}
+ul.square,ul.circle{margin-left:2em;margin-bottom:18px}
+ul.square{list-style:square outside}
+ul.circle{list-style:circle outside}
+.piped{display:block;zoom:1}
+.piped:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.piped li{float:left;display:inline}
+.piped a{border-left:1px solid #797c80;padding:0 0 0 .75em;margin-left:.75em}
+.piped a.first{border-left:0!important;padding-left:0;margin-left:0!important}
+#globalfooter .gf-buy{float:left;width:60%;margin:18px 0 9px}
+#globalfooter .gf-links{float:right;margin:18px 0 9px}
+#globalfooter .gf-links a{padding:0 10px;white-space:nowrap}
+#globalfooter .gf-links a.last{padding-right:0;_float:none!important;width:auto!important}
+#globalfooter{width:980px;color:#888;font-size:10px;margin:18px auto 0;padding-bottom:36px;text-align:left!important}
+#globalfooter a{color:#08c}
+#globalfooter p{margin-bottom:1em}
+#globalfooter p.gf-buy{float:left;width:52%;margin:18px 0 9px 3px}
+#globalfooter ul.piped a{padding:0 0 0 1.5em;margin-left:1.5em;border-left:1px solid #d0d0d0}
+#globalfooter .gf-links{float:right;margin:18px 3px 9px 0}
+#globalfooter .gf-sosumi{clear:both;width:100%;border-top:1px solid #ddd;padding-top:9px}
+#globalfooter .gf-sosumi a{padding:0 10px}
+#globalfooter .gf-sosumi p{float:left;margin-left:3px}
+#globalfooter form{margin:18px 10px}
+#globalfooter .search-wrapper{margin:0 auto}
+#globalfooter .search-wrapper input.prettysearch{margin-left:10px}
+#globalfooter ul.piped a.contact_us{padding-right:1.5em;border-right:1px solid #d0d0d0}
+#globalfooter ul.piped a.choose{margin-left:0;border:0}
+#globalfooter ul.piped a.choose img{vertical-align:middle;margin-top:-5px;*position:relative}
+#globalfooter #breadcrumbs{font-size:11px;color:#444;background:url(/images/apple/breadcrumb_bg.png) no-repeat;overflow:hidden;height:36px;line-height:34px;font-weight:bold;text-shadow:0 1px 0 #fff}
+#globalfooter #breadcrumbs a{color:#444;text-decoration:none;float:left;padding:0 10px;margin-left:-10px;*position:relative;_cursor:hand}
+#globalfooter #breadcrumbs a:hover{color:#333;text-decoration:none!important}
+#globalfooter #breadcrumbs a.home{margin:0;width:15px;height:0;padding-top:36px;overflow:hidden}
+#globalfooter #breadcrumbs span{float:left;width:9px;margin:0 10px 0 0;height:0;padding-top:34px;margin-top:1px;overflow:hidden;background:url(/images/apple/breadcrumb_sep.png) no-repeat}
+#globalfooter ol#breadcrumbs{font-size:11px;color:#444;background:url(/images/apple/breadcrumb_bg.png) no-repeat;height:36px;line-height:34px;margin:0;list-style:none;font-weight:bold;text-shadow:0 1px 0 #fff}
+#globalfooter ol#breadcrumbs li{float:left;margin:0;padding:0 0 0 20px;background:url(/images/apple/breadcrumb_sep_20080909.png) no-repeat}
+#globalfooter ol#breadcrumbs li a{float:left;color:#444;text-decoration:none;padding:0 10px;margin-left:-10px}
+#globalfooter ol#breadcrumbs li a:hover{color:#333;text-decoration:none}
+#globalfooter ol#breadcrumbs li.home{background:0;margin:0;padding:0}
+#globalfooter ol#breadcrumbs li.home a{margin:0;padding:0 10px;width:15px;text-indent:-9999px;overflow:hidden}
+#directorynav{font-size:11px;line-height:14px;padding-top:2px;background:url(/images/apple/directory_bg.png) repeat-y;border-top:1px solid #ddd;float:left;width:100%;margin-top:-4px;*position:relative}
+#directorynav .column{width:120px;padding:9px 0 2px 18px}
+#directorynav .column.last{float:left!important;padding-right:0}
+#directorynav h3{color:#666;margin:0;font-size:1em;line-height:14px;font-weight:bold;padding-bottom:4px}
+#directorynav h3.standalone{margin-bottom:18px}
+#directorynav a{color:#888;text-decoration:none;display:block;zoom:1}
+#directorynav h3.standalone a:link,#directorynav h3.standalone a:visited{color:#444}
+#directorynav a:hover{color:#333!important;text-decoration:none!important}
+#directorynav .capbottom{clear:both;position:relative;top:5px;_top:12px;height:5px;width:980px;background:url(/images/apple/directory_capbg.png) no-repeat}
+#directorynav ul{margin-bottom:0;padding-bottom:9px}
+#directorynav ul li{padding-bottom:4px}
+#directorynav.mac .column,#directorynav.ipod .column,#directorynav.ipodtouch .column,#directorynav.ipad .column,#directorynav.iphone .column,#directorynav.itunes .column{width:190px;padding:9px 0 0 54px}
+#breadory{border:1px solid #ddd;width:978px;margin:0 auto;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px}
+#globalfooter #breadory ol#breadcrumbs{background:0;clear:both;float:none;height:3em;line-height:3em;font-size:11px;color:#666;margin:0;list-style:none;font-weight:bold;text-shadow:0 1px 0 #fff}
+#breadory ol#breadcrumbs li{background:0;float:left;margin:0;padding:0 0 0 1em}
+#breadory ol#breadcrumbs li a{float:left;color:#666;text-decoration:none;padding:0 1.75em 0 0;margin-left:0;background:url(/images/apple/breadcrumb_separator.png) no-repeat 100% 50%}
+#breadory ol#breadcrumbs li a:hover{color:#333;text-decoration:none}
+#breadory ol#breadcrumbs li.home{background:0;margin:0;padding:0}
+#breadory ol#breadcrumbs li.home a{background:url(/images/apple/breadcrumb_home.png) no-repeat 1.25em 50%;margin:0;padding:0 0 0 1.25em;width:30px;text-indent:-9999px;overflow:hidden}
+#breadory ol#breadcrumbs li.home a:hover{background-image:url(/images/apple/breadcrumb_home_over.png)}
+@media only screen{#breadory ol#breadcrumbs li a{ background-image:url(/images/apple/breadcrumb_separator.svg)}
+#breadory ol#breadcrumbs li.home a{background-image:url(/images/apple/breadcrumb_home.svg)}
+#breadory ol#breadcrumbs li.home a:hover{background-image:url(/images/apple/breadcrumb_home_over.svg)}
+}
+#breadory #directorynav{background:0;clear:both;float:none;margin-top:0}
+#breadory #directorynav .capbottom{height:0;font-size:1px;_display:none}
+#productheader{padding:1em 0 .2em;overflow:hidden;width:980px;margin:0 auto;*position:relative;*height:39px}
+#productheader h1,#productheader h2{height:32px;line-height:32px;display:inline;float:left;margin:1px 0 6px 8px;padding:0;margin-bottom:6px!important}
+#productheader h1 a,#productheader h2 a{line-height:32px;background-position:0 0;background-repeat:no-repeat;color:#888;display:block;font-weight:normal;height:32px;outline:0;text-decoration:none;text-indent:-9999px;*position:relative}
+body#overview #productheader h1 a,body#overview #productheader h2 a{cursor:default}
+#productheader ul{display:inline;float:right;margin:0}
+#productheader ul li{display:inline}
+#productheader ul li a{color:#333;float:left!important;margin-top:1em;margin-left:30px;margin-right:8px;padding:0;text-decoration:none}
+#productheader ul li a:hover{color:#08c}
+#productheader .browsewebappss,#productheader .businessstores,#productheader .buyiphones,#productheader .buynows,#productheader .comingsoons,#productheader .descargarahoras,#productheader .downloadituness,#productheader .downloadnows,#productheader .finds,#productheader .freetrials,#productheader .getstarteds,#productheader .gos,#productheader .howtoapplys,#productheader .howtobuys,#productheader .joinnows,#productheader .learnmores,#productheader .notifymes,#productheader .ordernows,#productheader .preordernows,#productheader .preorders,#productheader .reserves,#productheader .startyoursearchs,#productheader .submits,#productheader .tryamacs,#productheader .upgradenows{margin:.8em 0 0 20px;float:left}
+#main .maincap{position:absolute;width:984px;height:7px;left:-2px;z-index:5;font-size:1px}
+#main .maincap.top{top:-1px;background:url(/images/apple/content_top20100901.png) no-repeat}
+#main{width:100%;min-width:980px;margin:0 auto;overflow:hidden}
+.apple_com-content{width:880px;margin:0 auto 18px;padding:4em 50px 2em;zoom:1}
+.apple_com-content:after,.selfclear:after{content:'.';display:block;height:0;clear:both;visibility:hidden}
+#productheader{z-index:10}
+#productheader h2 a{display:inline;text-indent:0}
+#productheader h2 a img{position:relative;margin-bottom:-8px}
+#globalfooter{margin-top:0}
+.geo-es #globalfooter ul.piped a{padding:0 0 0 1em;margin-left:1em}
+.geo-es #globalfooter ul.piped a.contact_us{padding-right:1.5em}
+.geo-es #globalfooter ul.piped a.choose{margin-left:0}
+.geo-br #globalfooter p.gf-buy{width:55%}
+.geo-mx #globalfooter p.gf-buy{width:53%}
+#facebook{clear:both;margin:0 auto 18px;width:980px;min-height:63px;_height:63px;padding:0;border:1px solid #ddd;background:#f4f6f7;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;zoom:1}
+#facebook .fbfan{float:left;margin-right:5px;width:230px;height:63px;background:url(/images/apple/border_fbfan.gif) no-repeat 100% 10px}
+#facebook.long .fbfan{width:265px}
+#facebook .fbfan.last{float:left!important;width:217px;margin-right:20px}
+#facebook p{color:#76797C;margin:24px 5px .5em 0}
+.column{float:left}
+.grid2col,.grid2cola,.grid2colb,.grid2colc,.grid2cold,.grid2cole,.grid2colf,..grid3-column,.grid3cola,.grid4col,.grid5col,.grid6col{width:100%}
+.grid2col .column{width:49%}
+.grid2col .grid2col .column{width:47.8%}
+.grid3-column .grid2col .column{width:46%}
+.grid4col .grid2col .column{width:45%}
+.grid2cola .column.first{width:66%}
+.grid2cola .column.last{width:32%}
+.grid2colb .column.first{width:74.9%}
+.grid2colb .column.last{width:23%}
+.grid2colc .column.first{width:32%}
+.grid2colc .column.last{width:66%}
+.grid2cold .column.first{width:23%}
+.grid2cold .column.last{width:74.9%}
+.grid2cole .column.first{width:79%}
+.grid2cole .column.last{width:19%}
+.grid2colf .column.first{width:19%}
+.grid2colf .column.last{width:79%}
+.grid3-column .column{width:32%;margin-left:2%}
+.grid2col .grid3-column .column{width:31%}
+.grid3cola .column{width:58%;margin-left:2%}
+.grid3cola .column.first,.grid3cola .column.last{width:19%}
+.grid4-column .column,.grid4col .column{width:23%;margin-left:3%}
+.grid5col .column{width:18.4%;margin-left:2%}
+.grid6col .column{width:15%;margin-left:2%}
+.column.first,.column.last{margin-left:0!important}
+.column.last{float:right!important}
+p.last,ul.last,ol.last,li.last{_width:auto!important;_float:none!important}
+#container:after,#content:after,.grid2col:after,.grid2cola:after,.grid2colb:after,.grid2colc:after,.grid2cold:after,.grid2cole:after,.grid2colf:after,.grid3-column:after,.grid3cola:after,.grid4col:after,.grid5col:after,.grid6col:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+#container,#content,.grid2col,.grid2cola,.grid2colb,.grid2colc,.grid2cold,.grid2cole,.grid2colf,.grid3-column,.grid3cola,.grid4col,.grid5col,.grid6col{zoom:1}
+body{font:12px/18px "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;background-color:#fff;color:#000;text-align:center}
+a{color:#298cda;outline:0}
+a:link,a:visited,a:active{text-decoration:none}
+a:hover{text-decoration:underline}
+p{margin-bottom:18px}
+h1{font-weight:bold;font-size:22px;line-height:22px;margin-bottom:18px}
+h2{font-weight:bold;font-size:1.5em;line-height:18px;margin-bottom:18px}
+h3{font-weight:bold;font-size:1.4em;line-height:18px}
+h4{font-weight:bold;font-size:1.4em;line-height:18px}
+h5{font-weight:bold;font-size:1em;line-height:14px}
+strong,b{font-weight:bold}
+em{font-style:italic}
+img.left{float:left;margin:2px 20px 1em 0}
+img.right{float:right;margin:2px 0 1em 10px}
+#main{position:relative;width:980px;height:auto;margin:0 auto;text-align:left;overflow:visible;background:none!important}
+#globalheader{text-align:left!important}
+#main #globalheader a{display:block;width:160px;height:24px;text-indent:-9999px;background:url(web-storefront/images/itunes.png) 0 0 no-repeat}
+#main #globalheader h2{margin:0}
+#main #content{position:relative;width:982px;margin:0 0 18px 0px;padding:0;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;-o-border-radius:4px;-khtml-border-radius:4px; background:#fff}
+#main #content{ }
+@-moz-document url-prefix(){#main #content{ border:1px solid;border-color:#e5e5e5 #dbdbdb #d2d2d2}
+}
+#main #content{*border:1px solid;*border-color:#e5e5e5 #dbdbdb #d2d2d2}
+#main #content:nth-child(1n){border:0}
+#main #content .cap{display:none}
+input.uploadval {
+    width: 500px;
+height: 20px;
+font-size: 20px;
+border-radius: 5px;
+border: 1px solid gray;
+margin-right: 10px;
+margin-top: 4px;
+padding-bottom: 2px;
+padding-left:4px;
+}
+
+input.commaval {
+    height:20px;
+    font-size:20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 1px solid red;
+    padding-bottom: 2px;
+}
+
+li.active {
+    text-decoration: underline;
+}
+
+/* paginator
+--------------------- */
+
+.boot { text-align:center;  }
+div.paginator { font-size: 14.5px; padding:23px 0; border-top:1px solid #fff; }
+div.paginator a { text-decoration: none; }
+
+ul.paginator { display:inline; list-style-type:none; margin:0; text-align:center; }
+ul.paginator li { display:inline; font-weight:bold; margin:0 2px; text-decoration: none; }
+ul.paginator li a { padding:8px 6px; border:1px solid #cccccc; border-radius: 4px; color:#000; background-color:#fafafa; }
+ul.paginator li a:hover { color: #0088CC; }
+ul.paginator li a.more { padding-right:14px; background-position:90% 50%; }
+ul.paginator li.inactive { color:#000; }
+ul.paginator li.inactive a { cursor:default; text-decoration:none; padding:5px; border:none; color:#000; background-color:#fbfbfb; }
+
+.paginator a.previous { color:#000; margin-right:2px; white-space:nowrap; background:#fafafa url(prev_grey.png) no-repeat scroll 15% 50%; border:1px solid #cdcdcd; border-radius: 4px; padding:8px 7px 8px 18px; }
+.paginator a.previous:hover { background-image: url(prev_blue.png); color: #0088CC; text-decoration: none; }
+.paginator a.previous.inactive { color:#666; background:transparent url(prev_grey.png) no-repeat scroll 15% 50%; border:none; }
+.paginator a.previous.inactive:hover { cursor:default; text-decoration:none; } 
+
+.paginator a.next { padding:5px; color:#000; margin-left:2px; white-space:nowrap; background:#fafafa url(next_grey.png) no-repeat scroll 85% 50%; border:1px solid #cdcdcd; border-radius: 4px; padding:8px 18px 8px 7px; }
+.paginator a.next:hover { background-image: url(next_blue.png); color: #0088CC; text-decoration: none; }
+.paginator a.next.inactive { border:none; color:#666; background:transparent url(next_grey.png) no-repeat scroll 90% 50%; }
+.paginator a.next.inactive:hover { cursor:default; text-decoration:none; } 
+
+.fbfan img {
+    float: left;
+padding-left: 10px;
+padding-top: 5px;
+}
+
+.fbfan-content {
+    margin-top: 20px;
+}
+
+.longtext p {
+    text-align: justify; 
+}
+
+.downloadnows {
+background-image: url(/images/apple/downloadnows.png);
+width: 108px;
+height: 25px;
+background-position: 0 0;
+background-repeat: no-repeat;
+display: block;
+margin: 10px 0 10px 32px;
+text-indent: -9999px;
+overflow: hidden;
+}
+
+.downloadnows:hover, .downloadnows:focus {
+    background-position: 0 -25px;
+}
+
+
+.downloadnows:active {
+    background-position: 0 -50px;
+}
+
+#aa_man_rowDIV_1 {
+    color: rgb(127, 126, 127);
+    height: 130.65625px;
+    text-decoration: none solid rgb(127, 126, 127);
+    width: 469.78125px;
+    -webkit-column-rule-color: rgb(127, 126, 127);
+    -webkit-perspective-origin: 234.890625px 65.328125px;
+    -webkit-text-emphasis-color: rgb(127, 126, 127);
+    -webkit-text-fill-color: rgb(127, 126, 127);
+    -webkit-text-stroke-color: rgb(127, 126, 127);
+    -webkit-transform-origin: 234.890625px 65.328125px;
+    border: 0px none rgb(127, 126, 127);
+    font: normal normal normal 13px/18.66666603088379px 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    outline: rgb(127, 126, 127) none 0px;
+    -webkit-border-after: 0px none rgb(127, 126, 127);
+    -webkit-border-before: 0px none rgb(127, 126, 127);
+    -webkit-border-end: 0px none rgb(127, 126, 127);
+    -webkit-border-start: 0px none rgb(127, 126, 127);
+}/*#aa_man_rowDIV_1*/
+
+#aa_man_rowDIV_1:after {
+    clear: both;
+    color: rgb(127, 126, 127);
+    display: table;
+    text-decoration: none solid rgb(127, 126, 127);
+    width: 1px;
+    -webkit-column-rule-color: rgb(127, 126, 127);
+    -webkit-perspective-origin: 0.5px 0px;
+    -webkit-text-emphasis-color: rgb(127, 126, 127);
+    -webkit-text-fill-color: rgb(127, 126, 127);
+    -webkit-text-stroke-color: rgb(127, 126, 127);
+    -webkit-transform-origin: 0.5px 0px;
+    content: '';
+    border: 0px none rgb(127, 126, 127);
+    font: normal normal normal 13px/0px 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    outline: rgb(127, 126, 127) none 0px;
+    -webkit-border-after: 0px none rgb(127, 126, 127);
+    -webkit-border-before: 0px none rgb(127, 126, 127);
+    -webkit-border-end: 0px none rgb(127, 126, 127);
+    -webkit-border-start: 0px none rgb(127, 126, 127);
+}/*#aa_man_rowDIV_1:after*/
+
+#aa_man_rowDIV_1:before {
+    color: rgb(127, 126, 127);
+    display: table;
+    text-decoration: none solid rgb(127, 126, 127);
+    width: 1px;
+    -webkit-column-rule-color: rgb(127, 126, 127);
+    -webkit-perspective-origin: 0.5px 0px;
+    -webkit-text-emphasis-color: rgb(127, 126, 127);
+    -webkit-text-fill-color: rgb(127, 126, 127);
+    -webkit-text-stroke-color: rgb(127, 126, 127);
+    -webkit-transform-origin: 0.5px 0px;
+    content: '';
+    border: 0px none rgb(127, 126, 127);
+    font: normal normal normal 13px/0px 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    outline: rgb(127, 126, 127) none 0px;
+    -webkit-border-after: 0px none rgb(127, 126, 127);
+    -webkit-border-before: 0px none rgb(127, 126, 127);
+    -webkit-border-end: 0px none rgb(127, 126, 127);
+    -webkit-border-start: 0px none rgb(127, 126, 127);
+}/*#aa_man_rowDIV_1:before*/
+
+#aa_man_rowDIV_2 {
+    box-sizing: border-box;
+    color: rgb(14, 112, 187);
+    float: left;
+    height: 80px;
+    min-height: 30px;
+    text-decoration: none solid rgb(14, 112, 187);
+    width: 69.953125px;
+    -webkit-column-rule-color: rgb(14, 112, 187);
+    -webkit-perspective-origin: 34.96875px 40px;
+    -webkit-text-emphasis-color: rgb(14, 112, 187);
+    -webkit-text-fill-color: rgb(14, 112, 187);
+    -webkit-text-stroke-color: rgb(14, 112, 187);
+    -webkit-transform-origin: 34.96875px 40px;
+    border: 0px none rgb(14, 112, 187);
+    font: normal normal normal 80px/80px HelveticaNeue-UltraLight, Helvetica, 'Lucida Grande', Arial, sans-serif;
+    outline: rgb(14, 112, 187) none 0px;
+    -webkit-border-after: 0px none rgb(14, 112, 187);
+    -webkit-border-before: 0px none rgb(14, 112, 187);
+    -webkit-border-end: 0px none rgb(14, 112, 187);
+    -webkit-border-start: 0px none rgb(14, 112, 187);
+}/*#aa_man_rowDIV_2*/
+
+#aa_man_rowDIV_3 {
+    box-sizing: border-box;
+    color: rgb(127, 126, 127);
+    float: left;
+    height: 130.65625px;
+    min-height: 30px;
+    text-decoration: none solid rgb(127, 126, 127);
+    width: 389.8125px;
+    -webkit-column-rule-color: rgb(127, 126, 127);
+    -webkit-perspective-origin: 194.90625px 65.328125px;
+    -webkit-text-emphasis-color: rgb(127, 126, 127);
+    -webkit-text-fill-color: rgb(127, 126, 127);
+    -webkit-text-stroke-color: rgb(127, 126, 127);
+    -webkit-transform-origin: 194.90625px 65.328125px;
+    border: 0px none rgb(127, 126, 127);
+    font: normal normal normal 13px/18.66666603088379px 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0px 0px 0px 9.984375px;
+    outline: rgb(127, 126, 127) none 0px;
+    -webkit-border-after: 0px none rgb(127, 126, 127);
+    -webkit-border-before: 0px none rgb(127, 126, 127);
+    -webkit-border-end: 0px none rgb(127, 126, 127);
+    -webkit-border-start: 0px none rgb(127, 126, 127);
+}/*#aa_man_rowDIV_3*/
+
+#aa_man_rowH3_4 {
+    color: rgb(51, 51, 51);
+    height: 26px;
+    letter-spacing: 1px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizelegibility;
+    width: 389.8125px;
+    -webkit-column-rule-color: rgb(51, 51, 51);
+    -webkit-perspective-origin: 194.90625px 13px;
+    -webkit-text-emphasis-color: rgb(51, 51, 51);
+    -webkit-text-fill-color: rgb(51, 51, 51);
+    -webkit-text-stroke-color: rgb(51, 51, 51);
+    -webkit-transform-origin: 194.90625px 13px;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 200 22px/normal HelveticaNeue-UltraLight, Helvetica, 'Lucida Grande', Arial, sans-serif;
+    margin: 9.333333015441895px 0px 2px;
+    outline: rgb(51, 51, 51) none 0px;
+    -webkit-border-after: 0px none rgb(51, 51, 51);
+    -webkit-border-before: 0px none rgb(51, 51, 51);
+    -webkit-border-end: 0px none rgb(51, 51, 51);
+    -webkit-border-start: 0px none rgb(51, 51, 51);
+}/*#aa_man_rowH3_4*/
+
+#aa_man_rowP_5 {
+    color: rgb(89, 89, 89);
+    height: 66px;
+    text-decoration: none solid rgb(89, 89, 89);
+    width: 389.8125px;
+    -webkit-column-rule-color: rgb(89, 89, 89);
+    -webkit-perspective-origin: 194.90625px 33px;
+    -webkit-text-emphasis-color: rgb(89, 89, 89);
+    -webkit-text-fill-color: rgb(89, 89, 89);
+    -webkit-text-stroke-color: rgb(89, 89, 89);
+    -webkit-transform-origin: 194.90625px 33px;
+    border: 0px none rgb(89, 89, 89);
+    font: normal normal normal 13px/22px 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0px 0px 9.333333015441895px;
+    outline: rgb(89, 89, 89) none 0px;
+    -webkit-border-after: 0px none rgb(89, 89, 89);
+    -webkit-border-before: 0px none rgb(89, 89, 89);
+    -webkit-border-end: 0px none rgb(89, 89, 89);
+    -webkit-border-start: 0px none rgb(89, 89, 89);
+}/*#aa_man_rowP_5*/
+
+#aa_man_rowA_6 {
+    color: rgb(22, 134, 198);
+    cursor: pointer;
+    text-decoration: none solid rgb(22, 134, 198);
+    -webkit-column-rule-color: rgb(22, 134, 198);
+    -webkit-text-decorations-in-effect: none;
+    -webkit-text-emphasis-color: rgb(22, 134, 198);
+    -webkit-text-fill-color: rgb(22, 134, 198);
+    -webkit-text-stroke-color: rgb(22, 134, 198);
+    border: 0px none rgb(22, 134, 198);
+    font: normal normal normal 13px/18.66666603088379px 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    outline: rgb(22, 134, 198) none 0px;
+    -webkit-border-after: 0px none rgb(22, 134, 198);
+    -webkit-border-before: 0px none rgb(22, 134, 198);
+    -webkit-border-end: 0px none rgb(22, 134, 198);
+    -webkit-border-start: 0px none rgb(22, 134, 198);
+}/*#aa_man_rowA_6*/
+
+#aa_man_rowA_6:after {
+    color: rgb(22, 134, 198);
+    cursor: pointer;
+    display: block;
+    height: 18px;
+    position: absolute;
+    text-decoration: none solid rgb(22, 134, 198);
+    width: 7.046875px;
+    -webkit-column-rule-color: rgb(22, 134, 198);
+    -webkit-perspective-origin: 3.515625px 9px;
+    -webkit-text-decorations-in-effect: none;
+    -webkit-text-emphasis-color: rgb(22, 134, 198);
+    -webkit-text-fill-color: rgb(22, 134, 198);
+    -webkit-text-stroke-color: rgb(22, 134, 198);
+    -webkit-transform-origin: 3.515625px 9px;
+    content: '▶';
+    border: 0px none rgb(22, 134, 198);
+    font: normal normal normal 8px/18.66666603088379px 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0px 0px 0px 5px;
+    outline: rgb(22, 134, 198) none 0px;
+    -webkit-border-after: 0px none rgb(22, 134, 198);
+    -webkit-border-before: 0px none rgb(22, 134, 198);
+    -webkit-border-end: 0px none rgb(22, 134, 198);
+    -webkit-border-start: 0px none rgb(22, 134, 198);
+}/*#aa_man_rowA_6:after*/
+
+
+#aa_app_cellDIV_10 {
+    color: rgb(64, 64, 64);
+    height: 4362.390625px;
+    min-width: 980px;
+    position: relative;
+    text-decoration: none solid rgb(64, 64, 64);
+    width: 1050px;
+    word-spacing: -1px;
+    border: 0px none rgb(64, 64, 64);
+    border-radius: 0 0 0 0;
+    font: normal normal normal 16px/26.999324798583984px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    outline: rgb(64, 64, 64) none 0px;
+    overflow: auto;
+    padding: 50px 0px 30px;
+}/*#aa_app_cellDIV_10*/
+
+#aa_app_cellSECTION_11 {
+    color: rgb(64, 64, 64);
+    height: 2000.390625px;
+    text-decoration: none solid rgb(64, 64, 64);
+    width: 894px;
+    word-spacing: -1px;
+    border: 0px none rgb(64, 64, 64);
+    border-radius: 0 0 0 0;
+    font: normal normal normal 16px/26.999324798583984px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    margin: 0px 35px;
+    outline: rgb(64, 64, 64) none 0px;
+    padding: 28px 43px 0px;
+}/*#aa_app_cellSECTION_11*/
+
+#aa_app_cellUL_12 {
+    clear: both;
+    color: rgb(64, 64, 64);
+    height: 0px;
+    text-decoration: none solid rgb(64, 64, 64);
+    width: 980px;
+    word-spacing: -1px;
+    border: 0px none rgb(64, 64, 64);
+    border-radius: 0 0 0 0;
+    font: normal normal normal 16px/26.999324798583984px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(64, 64, 64) none 0px;
+    padding: 0px 0px 0px 15px;
+}/*#aa_app_cellUL_12*/
+
+#aa_app_cellLI_1 {
+    color: rgb(64, 64, 64);
+    float: left;
+    height: 180.390625px;
+    position: relative;
+    text-decoration: none solid rgb(64, 64, 64);
+    width: 150px;
+    word-spacing: -1px;
+    border: 0px none rgb(64, 64, 64);
+    border-radius: 0 0 0 0;
+    font: normal normal normal 11px/26.999324798583984px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+    outline: rgb(64, 64, 64) none 0px;
+    padding: 0px 44px 24px 0px;
+}/*#aa_app_cellLI_1*/
+
+#aa_app_cellSTRONG_2 {
+    display: block;
+    height: 26px;
+    position: relative;
+    right: 155px;
+    text-align: right;
+    top: 13px;
+    width: 150px;
+    word-spacing: -1px;
+    border-radius: 0 0 0 0;
+    font: normal normal normal 11px/26.999324798583984px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+}/*#aa_app_cellSTRONG_2*/
+
+#aa_app_cellA_3 {
+    color: rgb(153, 153, 153);
+    cursor: pointer;
+    display: block;
+    height: 101px;
+    position: relative;
+    text-align: left;
+    text-decoration: none solid rgb(153, 153, 153);
+    width: 143px;
+    word-spacing: -1px;
+    border: 0px none rgb(153, 153, 153);
+    border-radius: 0 0 0 0;
+    font: normal normal normal 11px/26.999324798583984px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+    margin: -7px 0px -3px -7px;
+    outline: rgb(153, 153, 153) none 0px;
+    padding: 7px;
+}/*#aa_app_cellA_3*/
+
+#aa_app_cellIMG_4 {
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 4px 3px -2px;
+    color: rgb(153, 153, 153);
+    cursor: pointer;
+    display: block;
+    height: 100px;
+    position: relative;
+    text-align: left;
+    text-decoration: none solid rgb(153, 153, 153);
+    width: 100px;
+    word-spacing: -1px;
+    z-index: 1;
+    border: 0px none rgb(153, 153, 153);
+    border-radius: 20px 20px 20px 20px;
+    font: normal normal normal 11px/26.999324798583984px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+    margin: -9px 0px 10px;
+    outline: rgb(153, 153, 153) none 0px;
+}/*#aa_app_cellIMG_4*/
+
+#aa_app_cellH3_5 {
+    clear: left;
+    color: rgb(153, 153, 153);
+    float: left;
+    height: 15.390625px;
+    text-align: left;
+    text-decoration: none solid rgb(153, 153, 153);
+    width: 120px;
+    word-spacing: -1px;
+    border: 0px none rgb(153, 153, 153);
+    border-radius: 0 0 0 0;
+    font: normal normal bold 11px/15.399615287780762px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(153, 153, 153) none 0px;
+    overflow: hidden;
+}/*#aa_app_cellH3_5*/
+
+#aa_app_cellA_6 {
+    color: rgb(76, 76, 76);
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    position: relative;
+    text-align: left;
+    text-decoration: none solid rgb(76, 76, 76);
+    width: 113px;
+    word-spacing: -1px;
+    border: 0px none rgb(76, 76, 76);
+    border-radius: 0 0 0 0;
+    font: normal normal bold 11px/15.399615287780762px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+    margin: -7px 0px -3px -7px;
+    outline: rgb(76, 76, 76) none 0px;
+    padding: 7px;
+}/*#aa_app_cellA_6*/
+
+#aa_app_cellH4_7 {
+    color: rgb(153, 153, 153);
+    float: left;
+    height: 15.390625px;
+    text-align: left;
+    text-decoration: none solid rgb(153, 153, 153);
+    width: 120px;
+    word-spacing: -1px;
+    border: 0px none rgb(153, 153, 153);
+    border-radius: 0 0 0 0;
+    font: normal normal normal 11px/15.399615287780762px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(153, 153, 153) none 0px;
+    overflow: hidden;
+}/*#aa_app_cellH4_7*/
+
+#aa_app_cellA_8 {
+    color: rgb(153, 153, 153);
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    position: relative;
+    text-align: left;
+    text-decoration: none solid rgb(153, 153, 153);
+    width: 113px;
+    word-spacing: -1px;
+    border: 0px none rgb(153, 153, 153);
+    border-radius: 0 0 0 0;
+    font: normal normal normal 11px/15.399615287780762px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+    margin: -7px 0px -3px -7px;
+    outline: rgb(153, 153, 153) none 0px;
+    padding: 7px;
+}/*#aa_app_cellA_8*/
+
+#aa_app_cellA_9 {
+    background-position: 100% 50%;
+    color: rgb(0, 136, 204);
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 15.390625px;
+    position: relative;
+    text-align: left;
+    text-decoration: none solid rgb(0, 136, 204);
+    white-space: nowrap;
+    width: 98.8125px;
+    word-spacing: -1px;
+    /*background: rgba(0, 0, 0, 0) url(https://www.apple.com/global/elements/arrows/morearrow_08c_2x.gif) no-repeat scroll 100% 50% / 4px 7px padding-box border-box;*/
+    border: 0px none rgb(0, 136, 204);
+    border-radius: 0 0 0 0;
+    font: normal normal normal 11px/15.399615287780762px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+    margin: -7px 0px -3px -7px;
+    outline: rgb(0, 136, 204) none 0px;
+    padding: 7px;
+}/*#aa_app_cellA_9*/
+
+#aa_apps_gridDIV_2 {
+    color: rgb(64, 64, 64);
+    height: 282px;
+    min-width: 980px;
+    position: relative;
+    text-decoration: none solid rgb(64, 64, 64);
+    width: 1050px;
+    word-spacing: -1px;
+    border: 0px none rgb(64, 64, 64);
+    font: normal normal normal 16px/26.999324798583984px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    outline: rgb(64, 64, 64) none 0px;
+    overflow: auto;
+    padding: 50px 0px 30px;
+}/*#aa_apps_gridDIV_2*/
+
+#aa_apps_gridSECTION_1 {
+    color: rgb(64, 64, 64);
+    text-decoration: none solid rgb(64, 64, 64);
+    width: 894px;
+    word-spacing: -1px;
+    border: 0px none rgb(64, 64, 64);
+    font: normal normal normal 16px/26.999324798583984px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    /*margin: 0px 35px;*/
+    outline: rgb(64, 64, 64) none 0px;
+    /*padding: 28px 43px 0px;*/
+}/*#aa_apps_gridSECTION_1*/
+
+.divider { margin-left:0px; margin-right:0px; padding-left:70px; padding-right:70px; background-repeat:no-repeat; background-position:50% 0; }
+.divider.line { height:1px; background-image:url(https://www.apple.com/v/itunes/d/images/divider_line.png); top: 5px; }
+.divider.down { height:62px; margin-bottom:-62px; background-image:url(https://www.apple.com/v/itunes/d/images/divider_down.png); }
+.divider.up { height:62px; margin-top:-62px; background-image:url(https://www.apple.com/v/itunes/d/images/divider_up.png); background-position: 50% 100%; }
+
+
+.update {
+position: relative;
+z-index: 2;
+width: 834px;
+margin: 12px auto 0px;
+background-color: #f0f0f0;
+border: 1px solid #dadada;
+border-radius: 4px;
+text-align: center;
+font-size: 1.333em;
+line-height: 1.68em;
+}
+
+#aa_navbarA_5 {
+    color: rgb(0, 136, 204);
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    text-decoration: none solid rgb(0, 136, 204);
+    width: 734px;
+    border: 0px none rgb(0, 136, 204);
+    font: normal normal normal 16px/26.873279571533203px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    outline: rgb(0, 136, 204) none 0px;
+    padding: 10px 0px 0px 50px;
+}/*#aa_navbarA_5*/
+
+#aa_navbarSPAN_1 {
+    background-position: 100% 60%;
+    color: rgb(0, 136, 204);
+    cursor: pointer;
+    text-align: right;
+    text-decoration: none solid rgb(0, 136, 204);
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0) url(http://images.apple.com/v/ios/f/images/more.svg) no-repeat scroll 100% 60% / 6px 11px padding-box border-box;
+    border: 0px none rgb(0, 136, 204);
+    font: normal normal normal 16px/26.873279571533203px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    outline: rgb(0, 136, 204) none 0px;
+    padding: 0px 12px 0px 0px;
+}/*#aa_navbarSPAN_1*/
+
+.select_dropdown {
+
+padding-left: 150px;   
+width: 100px;
+   height: 28px;
+   overflow: hidden;
+   background: url('http://s24.postimg.org/lyhytocf5/dropdown.png') no-repeat right #FEFEFE;
+   border: #FEFEFE 1px solid;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+   }
+.select_dropdown select {
+  
+   background: transparent;
+   width: 100px;
+   font-size:11pt;
+   color:grey;
+   border: 0;
+   border-radius: 0;
+   height: 28px;
+   -webkit-appearance: none;
+   
+   }
+   .select_dropdown select:focus {
+    outline: none;
+
+}
+
+.select_dropdown2 {
+   
+padding-left: 50px;
+width: 125px;
+   height: 28px;
+   overflow: hidden;
+   background: url('http://s24.postimg.org/lyhytocf5/dropdown.png') no-repeat right #FEFEFE;
+   border: #FEFEFE 1px solid;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+   }
+.select_dropdown2 select {
+  
+   background: transparent;
+   width: 125px;
+   font-size:11pt;
+   color:grey;
+   border: 0;
+   border-radius: 0;
+   height: 28px;
+   -webkit-appearance: none;
+   
+   }
+   .select_dropdown2 select:focus {
+    outline: none;
+
+}
+
+.select_dropdown3 {
+   
+padding-left: 50px;
+width: 100px;
+   height: 28px;
+   overflow: hidden;
+   background: url('http://s24.postimg.org/lyhytocf5/dropdown.png') no-repeat right #FEFEFE;
+   border: #FEFEFE 1px solid;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+   }
+.select_dropdown3 select {
+  
+   background: transparent;
+   width: 100px;
+   font-size:11pt;
+   color:grey;
+   border: 0;
+   border-radius: 0;
+   height: 28px;
+   -webkit-appearance: none;
+   
+   }
+   .select_dropdown3 select:focus {
+    outline: none;
+
+}
+
+.select_dropdown4 {
+   
+padding-left: 50px;
+width: 105px;
+   height: 28px;
+   overflow: hidden;
+   background: url('http://s24.postimg.org/lyhytocf5/dropdown.png') no-repeat right #FEFEFE;
+   border: #FEFEFE 1px solid;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+   }
+.select_dropdown4 select {
+  
+   background: transparent;
+   width: 105px;
+   font-size:11pt;
+   color:grey;
+   border: 0;
+   border-radius: 0;
+   height: 28px;
+   -webkit-appearance: none;
+   
+   }
+   .select_dropdown4 select:focus {
+    outline: none;
+
+}
+
+.social { margin:8px 0 30px; *margin:8px auto 30px; text-align:center; height:45px; *width:200px; }
+.social a { display:inline-block; *display:block; *float:left; margin:0 20px; width:45px; height:40px; overflow:hidden; }
+.social .twitter img { margin-top:0; }
+.social .facebook img { margin-top:0; }
+.social .facebook:hover img { margin-top:-42px; }
+.social .twitter:hover img { margin-top:-42px;  }
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+    .downloadnows {
+background-image: url(/images/apple/downloadnows_2x.png);
+background-size: 108px 100px;
+width: 108px;
+height: 25px;
+display: block;
+margin: 10px 0 10px 32px;
+text-indent: -9999px;
+overflow: hidden;
+}
+
+}
+
+#aa_books_DIV_12 {
+    color: rgb(64, 64, 64);
+    height: 560.390625px;
+    min-width: 980px;
+    position: relative;
+    text-decoration: none solid rgb(64, 64, 64);
+    width: 1280px;
+    word-spacing: -1px;
+    border: 0px none rgb(64, 64, 64);
+    font: normal normal normal 16px/26.999324798583984px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    outline: rgb(64, 64, 64) none 0px;
+    overflow: hidden;
+}/*#aa_books_DIV_12*/
+
+#aa_books_SECTION_1 {
+    color: rgb(64, 64, 64);
+    height: 278.390625px;
+    text-decoration: none solid rgb(64, 64, 64);
+    width: 894px;
+    word-spacing: -1px;
+    border: 0px none rgb(64, 64, 64);
+    font: normal normal normal 16px/26.999324798583984px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    outline: rgb(64, 64, 64) none 0px;
+}/*#aa_books_SECTION_1*/
+
+#aa_books_UL_2 {
+    clear: both;
+    color: rgb(64, 64, 64);
+    height: 278.390625px;
+    text-decoration: none solid rgb(64, 64, 64);
+    width: 980px;
+    word-spacing: -1px;
+    border: 0px none rgb(64, 64, 64);
+    font: normal normal normal 16px/26.999324798583984px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(64, 64, 64) none 0px;
+    padding: 0px 0px 0px 15px;
+}/*#aa_books_UL_2*/
+
+#aa_books_UL_2:after {
+    clear: both;
+    color: rgb(64, 64, 64);
+    text-decoration: none solid rgb(64, 64, 64);
+    visibility: hidden;
+    width: 980px;
+    word-spacing: -1px;
+    content: '.';
+    border: 0px none rgb(64, 64, 64);
+    font: normal normal normal 16px/26.999324798583984px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(64, 64, 64) none 0px;
+    padding: 0px;
+}/*#aa_books_UL_2:after*/
+
+#aa_books_LI_3 {
+    color: rgb(64, 64, 64);
+    float: left;
+    height: 254.390625px;
+    position: relative;
+    text-decoration: none solid rgb(64, 64, 64);
+    width: 150px;
+    word-spacing: -1px;
+    border: 0px none rgb(64, 64, 64);
+    font: normal normal normal 11px/26.999324798583984px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+    outline: rgb(64, 64, 64) none 0px;
+    padding: 0px 40px 24px 0px;
+}/*#aa_books_LI_3*/
+
+#aa_books_STRONG_4 {
+    display: block;
+    height: 26px;
+    position: relative;
+    right: 155px;
+    text-align: right;
+    top: 13px;
+    width: 150px;
+    word-spacing: -1px;
+    font: normal normal normal 11px/26.999324798583984px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+}/*#aa_books_STRONG_4*/
+
+#aa_books_A_5 {
+    color: rgb(153, 153, 153);
+    cursor: pointer;
+    display: block;
+    height: 175px;
+    position: relative;
+    text-align: left;
+    text-decoration: none solid rgb(153, 153, 153);
+    width: 143px;
+    word-spacing: -1px;
+    border: 0px none rgb(153, 153, 153);
+    font: normal normal normal 11px/26.999324798583984px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+    margin: -7px 0px -3px -7px;
+    outline: rgb(153, 153, 153) none 0px;
+    padding: 7px;
+}/*#aa_books_A_5*/
+
+#aa_books_IMG_6 {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px 0px;
+    color: rgb(153, 153, 153);
+    cursor: pointer;
+    display: block;
+    height: 170px;
+    position: relative;
+    text-align: left;
+    text-decoration: none solid rgb(153, 153, 153);
+    width: 113px;
+    word-spacing: -1px;
+    z-index: 1;
+    border: 0px none rgb(153, 153, 153);
+    font: normal normal normal 11px/26.999324798583984px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+    margin: 0px 0px 5px;
+    outline: rgb(153, 153, 153) none 0px;
+}/*#aa_books_IMG_6*/
+
+#aa_books_H3_7 {
+    clear: left;
+    color: rgb(153, 153, 153);
+    float: left;
+    height: 15.390625px;
+    text-align: left;
+    text-decoration: none solid rgb(153, 153, 153);
+    width: 120px;
+    word-spacing: -1px;
+    border: 0px none rgb(153, 153, 153);
+    font: normal normal bold 11px/15.399615287780762px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(153, 153, 153) none 0px;
+    overflow: hidden;
+}/*#aa_books_H3_7*/
+
+#aa_books_A_8 {
+    color: rgb(76, 76, 76);
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    position: relative;
+    text-align: left;
+    text-decoration: none solid rgb(76, 76, 76);
+    width: 113px;
+    word-spacing: -1px;
+    border: 0px none rgb(76, 76, 76);
+    font: normal normal bold 11px/15.399615287780762px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+    margin: -7px 0px -3px -7px;
+    outline: rgb(76, 76, 76) none 0px;
+    padding: 7px;
+}/*#aa_books_A_8*/
+
+#aa_books_H4_9 {
+    color: rgb(153, 153, 153);
+    float: left;
+    height: 15.390625px;
+    text-align: left;
+    text-decoration: none solid rgb(153, 153, 153);
+    width: 120px;
+    word-spacing: -1px;
+    border: 0px none rgb(153, 153, 153);
+    font: normal normal normal 11px/15.399615287780762px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(153, 153, 153) none 0px;
+    overflow: hidden;
+}/*#aa_books_H4_9*/
+
+#aa_books_A_10 {
+    color: rgb(153, 153, 153);
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    position: relative;
+    text-align: left;
+    text-decoration: none solid rgb(153, 153, 153);
+    width: 113px;
+    word-spacing: -1px;
+    border: 0px none rgb(153, 153, 153);
+    font: normal normal normal 11px/15.399615287780762px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+    margin: -7px 0px -3px -7px;
+    outline: rgb(153, 153, 153) none 0px;
+    padding: 7px;
+}/*#aa_books_A_10*/
+
+#aa_books_A_11 {
+    background-position: 100% 50%;
+    color: rgb(0, 136, 204);
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 15.390625px;
+    position: relative;
+    text-align: right;
+    text-decoration: none solid rgb(0, 136, 204);
+    white-space: nowrap;
+    width: 98.34375px;
+    word-spacing: -1px;
+    background: rgba(0, 0, 0, 0) url(http://images.apple.com/global/elements/arrows/morearrow_08c_2x.gif) no-repeat scroll 100% 50% / 4px 7px padding-box border-box;
+    border: 0px none rgb(0, 136, 204);
+    font: normal normal normal 11px/15.399615287780762px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    list-style: none outside none;
+    margin: -7px 0px -3px -7px;
+    outline: rgb(0, 136, 204) none 0px;
+    padding: 7px;
+}/*#aa_books_A_11*/
+

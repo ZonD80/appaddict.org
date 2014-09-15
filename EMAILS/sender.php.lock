@@ -1,0 +1,15 @@
+<?php
+require_once('../init.php');
+
+$body = file_get_contents('appdoradead.html');
+
+$emails = file('emails.txt');
+
+foreach ($emails as $email) {
+$email = trim($email);	
+$API->sent_mail($email,'AppDora','most_unique@appaddict.cc','AppDora is closing',$body);
+	print "$email sent\n";
+//	break;
+}
+print "done\n";
+?>
