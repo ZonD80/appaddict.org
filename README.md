@@ -5,6 +5,8 @@ This Repository contains source code of AppAddict.org website. I'm sharing it wi
 
 Feel free to use it in your projects.
 
+Check out INFRASTRUCTURE_DETAILS.xlsx to view whole AA infrastructure.
+
 License
 ----
 
